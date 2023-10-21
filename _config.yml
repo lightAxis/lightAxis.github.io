@@ -19,7 +19,7 @@ title: LightAxis # the main title
 tagline: 로보틱스/제어쟁이 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Robotics Control Theory ROS1 ROS ROS2
+  Miscellaneous things in robotics and control
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
