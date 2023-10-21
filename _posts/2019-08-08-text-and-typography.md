@@ -83,10 +83,10 @@ Moon
 ## Tables
 
 | Company                      | Contact          | Country |
-|:-----------------------------|:-----------------|--------:|
+| :--------------------------- | :--------------- | ------: |
 | Alfreds Futterkiste          | Maria Anders     | Germany |
-| Island Trading               | Helen Bennett    | UK      |
-| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
+| Island Trading               | Helen Bennett    |      UK |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli |   Italy |
 
 ## Links
 
@@ -186,3 +186,5 @@ The image below will toggle dark/light mode based on theme preference, notice it
 
 [^footnote]: The footnote source
 [^fn-nth-2]: The 2nd footnote source
+
+## test post editting
