@@ -1,17 +1,42 @@
 ---
+# 포스트 제목
 title: Text and Typography
-author: cotes
-date: 2019-08-08 11:33:00 +0800
+
+# author key값, _data/authors.yaml 에 있어야 정상적으로 표시됨
+author: cotes 
+
+# 포스트가 올라간 날짜. 한국은 GMT+09이므로 +0900 이다
+date: 2019-08-08 11:33:00 +0800 
+
+# 카테고리 세팅. n개의 배열이며, 순서대로 부모->자식 관계이다
 categories: [Blogging, Demo]
+
+# 태그 세팅. n 개의 배열이다.
 tags: [typography]
-pin: true
-math: true
-mermaid: true
+
+# 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
   path: /assets/img/avatar/avatar-512x512.jpg
   alt: Responsive rendering of Chirpy theme on multiple devices.
 
+# 홈에 pin으로 걸어놓을지 결정한다.
+pin: true
+
+# table of content를 사용할지 여부
+toc: true
+
+# 댓글을 열지 말지
+comments: true
+
+# mathjax 사용 여부
+math: true
+
+# mermaid 차트 사용 여부
+mermaid: true
+
+# 이 포스트를 보여줄지 말지
 published: false
+
 ---
 
 This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
