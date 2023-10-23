@@ -20,7 +20,7 @@ image:
   alt: Responsive rendering of Chirpy theme on multiple devices.
 
 # 홈에 pin으로 걸어놓을지 결정한다.
-pin: true
+pin: false
 
 # table of content를 사용할지 여부
 toc: true
@@ -35,7 +35,7 @@ math: true
 mermaid: true
 
 # 이 포스트를 보여줄지 말지
-published: true
+published: false
 
 ---
 
