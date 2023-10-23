@@ -35,7 +35,7 @@ math: true
 mermaid: true
 
 # 이 포스트를 보여줄지 말지
-published: false
+published: true
 
 ---
 
