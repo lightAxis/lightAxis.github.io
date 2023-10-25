@@ -1,5 +1,9 @@
 # The Site Configuration
 
+# in my case, there's a port confilct with nxd.exe (no-machine nx deamon process)
+# so i changed port 4000->3999
+port: 3999
+
 # Import the theme
 theme: jekyll-theme-chirpy
 

@@ -7,3 +7,14 @@ sudo gem install jekyll bundler
 
 
 ## 세부 세팅 https://www.irgroup.org/posts/jekyll-chirpy/
+
+# WSL2에서 설치했을 때, 만약 호스트 pc 에서 안보인다면? 챗지피티한테 물어본 결과 다음과 같다
+
+# WSL2 안에서 ip addr show eth0 쳐서 inet 주소값 확인 (외부 접근 주소 확인)
+# jekyll serve --host 0.0.0.0 으로 바꿔서 외부에서도 접근 가능하도록 수정
+# 호스트pc 웹브라우저에서 inet 주소값:4000으로 접근
+
+# 보통은 VSCode에서 자동으로 port forwarding을 통해 잡아주지만, 간혹 이상하게 웹 페이지가 연결은 되는데 뜨진 않을 때가 있다.
+# 호스트pc에서 실행->resmon(리소스모니터)->수신대기포트 탭에서 혹시 jekyll 서버의 포트를 이미 사용하는 다른 프로세스가 있는지 확인한다. 
+
+# port 변경 방법은 그냥 _config.yaml에서 post : 3999 항목을 추가하면 끝이다.
