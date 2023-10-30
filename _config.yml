@@ -83,14 +83,17 @@ avatar: "assets/img/avatar/avatar-512x512.jpg"
 toc: true
 
 comments:
-  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: 'utterances'
+  # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    repo: "lightAxis/lightAxis.github.io"
+    issue_term: "url"
+    theme: "github-dark"
+    crossorigin: "anonymous"
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
