@@ -188,7 +188,6 @@ z \cdot \overline{z} &= re^{\theta i} \cdot re^{-\theta i} \nonumber \\
 서로 정 반대의 두 편각은 곱해지면서 사라지고, 실수부만 길이가 그대로 제곱되어 남는 것으로 해석할 수 있다.
 
 
-
 이전에  $\left\vert z \right\vert = 1, arg(z) = \theta$인 자세 복소수 $z$에 대해서 각속도를 구했던 식은 다음과 같다. 
 
 
