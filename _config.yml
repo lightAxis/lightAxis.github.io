@@ -92,7 +92,7 @@ comments:
   utterances:
     repo: "lightAxis/lightAxis.github.io"
     issue_term: "url"
-    theme: "github-dark"
+    theme: "icy-dark"
     crossorigin: "anonymous"
   # Giscus options › https://giscus.app
   giscus:
