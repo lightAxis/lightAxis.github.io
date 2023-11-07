@@ -100,8 +100,8 @@ $$\begin{align}
 ![그림3](/assets/img/posts/mathmatics/rotation/8-로드리게스-회전/3d_axis_rotation_vector_plane.png){: width="500" height="400"}
 _그림 3: 회전된 벡터가 놓여있는 평면의 좌표계 벡터들_
 
-그림3을 통해 $\vec{p_\bot'}$을 유도할 수 있다.  
-공간상에 $\vec{u}$와 수직이고, $\vec{p_\bot}$을 포함하는 평면 상에서 $\theta$만큼 회전된 벡터이다.  
+그림3을 통해 $\vec{v_\bot'}$을 유도할 수 있다.  
+공간상에 $\vec{u}$와 수직이고, $\vec{v_\bot}$을 포함하는 평면 상에서 $\theta$만큼 회전된 벡터이다.  
 
 해당 평면을 보면, 마치 2차원 평면에서 벡터가 $\theta$만큼 회전하듯이 움직일 것이다.  
 이때 $x$축 방향을 $\vec{v_\bot}$, $y$축 방향은 $\vec{u} \times \vec{v_\bot}$ 으로 잡을 수 있다.
@@ -186,7 +186,7 @@ R &= \cos{(\theta)}I + \sin{(\theta)}[u]_\times  + (1-\cos{\theta})uu^T \nonumbe
 \therefore R &= I + \sin{\theta} K + (1-\cos{\theta})K^2 \label{e6}
 \end{align}$$
 
-위 식 $\eqref{e6}$의 형태가 좀 더 유명한데, Lie Group 중 $SO(3)$의 Exponential을 취하면 나오는 형태이기 때문이다. 
+위 식 $\eqref{e6}$의 형태가 좀 더 유명한데, Lie Group 중 $so(3)$의 Exponential을 취하면 나오는 형태이기 때문이다. 
 
 > 로드리게스 회전 변환 행렬의 형태를 총 정리하면 다음과 같다.
 > 
@@ -200,7 +200,7 @@ R &= \cos{(\theta)}I + \sin{(\theta)}[u]_\times  + (1-\cos{\theta})uu^T \nonumbe
 > \end{align}$$
 {: .prompt-info}
 
-## 이 방식의 장장점
+## 이 방식의 장단점
 
 ### 장점
 **직관성**  
