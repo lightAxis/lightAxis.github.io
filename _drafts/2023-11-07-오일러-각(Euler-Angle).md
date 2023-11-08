@@ -186,3 +186,35 @@ intrinsic 회전 방식에 $x \rightarrow y \rightarrow z$ 순서를 가진 오�
 
 이제 공간상에 고정된 벡터 $P$를 생각해 보자. $P_A$가 벡터 $P$를 $A$ 좌표계에서 관찰한 위치 라고 하자. 그렇다면 다음의 관계가 성립한다. 
 
+
+$$\begin{align}
+R_x^T P_I &= P_{B'} \nonumber \\
+R_y^T P_{B'} &= P_{B''} \nonumber \\
+R_z^T P_{B''} &= P_B \nonumber \\
+\nonumber \\
+=> R_z^T R_y^T R_x^T P_I &= P_B \nonumber \\
+ P_I &= R_x R_y R_z P_B \nonumber \\
+&= R P_B \nonumber \\
+\nonumber \\
+\therefore R = R_x R_y R_z \label{e1}
+\end{align}$$
+
+그리고 Extrinsic의 경우에는 회전 행렬이 반대로 된다.  
+축 회전순서는 X-Y-Z로 동일하지만, extricsic인 경우에는 다음과 같다.
+
+$$\begin{align} 
+R = R_z R_y R_x \label{e2}
+\end{align}$$
+
+따라서 식 $\eqref{e1}, \eqref{e2}$를 정리하면 다음과 같다.
+
+> 오일러 각 순서 $a - b - c$ , $(a,b,c \in \{x,y,z\})$ 에 대해서 벡터 회전 행렬 $R$은
+> 
+> $$\begin{align}
+> R &= R_{a} R_{b} R_{c} \text{, if intrinsic} \nonumber \\
+> &= R_{c} R_{b} R_{a} \text{, if extrinsic} \label{e3} \\
+> \end{align}$$
+>
+> 각 회전 행렬 $R_x, R_y, R_z$에 대해서는 
+{: .prompt-info}
+
