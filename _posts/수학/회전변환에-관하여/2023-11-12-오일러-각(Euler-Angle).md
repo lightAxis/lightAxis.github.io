@@ -6,7 +6,7 @@ title: 오일러 각(Euler Angle)
 author: JiseokLee
 
 # 포스트가 올라간 날짜. 한국은 GMT+09이므로 +0900 이다
-date: 2023-11-09 10:40:00 +0900 
+date: 2023-11-12 20:40:00 +0900 
 
 # 카테고리 세팅. n개의 배열이며, 순서대로 부모->자식 관계이다
 categories: [수학, 회전변환에 관하여]
@@ -16,7 +16,7 @@ tags: [Mathmatics, Attitude Representation, Vector Rotation, Vector Transform]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/8-로드리게스-회전/jacket.png
+  path: /assets/img/posts/mathmatics/rotation/9-오일러-각/jacket.png
   alt: 오일러가 제안했던 3차원 회전 방식
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -41,7 +41,8 @@ published: true
 
 > 오일러가 제안했던 3차원 회전 방식, 오일러 각(Euler Angle)에 대해 알아보자
 
-> 참고 : [Euler Angles](https://en.wikipedia.org/wiki/Euler_angles)
+> 참고 : [Euler Angles](https://en.wikipedia.org/wiki/Euler_angles)  
+> 오일러각은 그림 그리기도 너무 까다롭고, 내용도 중구난방이 많아서, 영문 위키를 많이 참조했다.
 
 ## 오일러와 3차원 회전
 
@@ -56,19 +57,21 @@ published: true
 내용은 다음과 같다 : 
 
 구를 중심을 지나는 임의의 축들로 여러번 회전 시켰을 때, 회전 전과 후에 위치가 변하지 않은 구면상의 2개의 점을 지나는 지름을 언제나 찾을 수 있다.
-> 참조 : [Euler's Rotation Theorem](https://en.wikipedia.org/wiki/Euler%27s_rotation_theorem)
+> 참조 : [Euler's Rotation Theorem](https://en.wikipedia.org/wiki/Euler%27s_rotation_theorem){: width="500" height="400"}
 
 한마디로 3차원 회전 변환의 합성 역시 3차원 회전 변환이라는 뜻이다.  
 
 이게 대단한 이유는 당시에는 행렬이 없었기 때문이다.  
-행렬의 발명 시기는 1850년인데, 이는 1840년의 로드리게스 회전, 1884년의 쿼터니안보다 나중에 일이다.   
+행렬의 발명 시기는 1850년인데, 이는 1840년의 로드리게스 회전, 1844년의 쿼터니안보다 나중에 일이다.   
 
 대체 오일러는 무슨 싸움을 했던 걸까.
 
 ## 오일러 각의 기본 개념과 종류
 
 ### 기본 개념과 표기
-[그림1](오일러 각 그림)
+![그림1](/assets/img/posts/mathmatics/rotation/9-오일러-각/classical-euler.png){: width="500" height="400"}
+_그림 1: 오일러 각 (classical). [참고](https://en.wikipedia.org/wiki/Euler_angles#)_
+
 
 그림1에서 보다시피, 오일러 각은 특정 좌표계 축을 잡고 나머지를 회전시키는 elemental rotation을 3번 합성하는 방식이다. 이때 좌표계 축을 회전시키는 순서와, 회전시키는 기준에 대한 방법을 표기해 줘야 한다.  
 그 후에는, 각 좌표계축의 회전 각도만 간단하게 표시하는 편이다. 
@@ -78,7 +81,9 @@ elemental rotation 은 특정 좌표축을 중심으로 나머지 좌표축을 �
 
 예시 : $z,y,x$ 축 방향으로 순서대로 돌리면, $z-y-x$ or 3-2-1로 표시한다.
 
-[그림2](intrinsic 과 extrinsic 회전)
+![그림2](/assets/img/posts/mathmatics/rotation/9-오일러-각/intrinsic.png){: width="500" height="400"}
+![그림3](/assets/img/posts/mathmatics/rotation/9-오일러-각/extrinsic.png){: width="500" height="400"}
+_그림 2: intrinsic과 extrinsic 회전 [참고](https://en.wikipedia.org/wiki/Euler_angles#)_
 
 > 참고 : [intrinsic & extrinsic rotations](https://en.wikipedia.org/wiki/Davenport_chained_rotations#Intrinsic_rotations)
 
@@ -100,21 +105,22 @@ $I \rightarrow B'\rightarrow B'' \rightarrow B$ 좌표계 순서대로 바뀐다
 기준 좌표계 $I$의 3축 성분을 $I_x, I_y, I_z$라 하면, 다음의 절차대로 회전시킨다. 
 
 - 처음에 기준 좌표계 $I_x, I_y,I_z$ 부터 시작한다
-- $I_z$ 축으로 $\alpha$만큼 회전하여 (z축 intrinsic) $B'_x, B'_y, B'_z$ 좌표계를 만든다.
-- $B'_y$ 축으로 $\beta$만큼 회전하여 (y축 intrinsic) $B''_x, B''_y, B''_z$ 좌표계를 만든다.
+- $I_z$ 축으로 $\alpha$만큼 회전하여 (z축 intrinsic) $B^{\prime}_x, B^{\prime}_y, B^{\prime}_z$ 좌표계를 만든다.
+- $B'_y$ 축으로 $\beta$만큼 회전하여 (y축 intrinsic) $B^{\prime\prime}_x, B^{\prime\prime}_y, B^{\prime\prime}_z$ 좌표계를 만든다.
 - $B''_x$ 축으로 $\gamma$만큼 회전하여 (x축 intrinsic) $B_x, B_y, B_z$ 좌표계를 만든다.
 
 만약 extrinsic 회전이었다면, 다음의 절차대로 회전시킨다.
 
 - 처음에 기준 좌표계 $I_x, I_y,I_z$ 부터 시작한다
-- $I_z$ 축으로 $\alpha$만큼 회전하여 (z축 extrinsic) $B'_x, B'_y, B'_z$ 좌표계를 만든다.
-- $I_y$ 축으로 $\beta$만큼 회전하여 (y축 extrinsic) $B''_x, B''_y, B''_z$ 좌표계를 만든다.
+- $I_z$ 축으로 $\alpha$만큼 회전하여 (z축 extrinsic) $B^{\prime}_x, B^{\prime}_y, B^{\prime}_z$ 좌표계를 만든다.
+- $I_y$ 축으로 $\beta$만큼 회전하여 (y축 extrinsic) $B^{\prime\prime}_x, B^{\prime\prime}_y, B^{\prime\prime}_z$ 좌표계를 만든다.
 - $I_x$ 축으로 $\gamma$만큼 회전하여 (x축 extrinsic) $B_x, B_y, B_z$ 좌표계를 만든다.
 
 
 ### Classic Euler Angle
 
-[그림3](클래시컬 오일러 앵글 사진 위키피디아 참조)
+![그림3](/assets/img/posts/mathmatics/rotation/9-오일러-각/classical-euler.png){: width="500" height="400"}
+_그림 3: 기존 오일러 각의 구조 [참고](https://en.wikipedia.org/wiki/Euler_angles#Classic_Euler_angles)_
 
 오일러가 처음 발표했던 오일러 각은 지금과는 조금 다른 형태였다.  
 
@@ -125,7 +131,8 @@ $I \rightarrow B'\rightarrow B'' \rightarrow B$ 좌표계 순서대로 바뀐다
 
 ### Tait-Bryan Angle
 
-[그림4](타잇브라이언 앵글 사진 위키피디아 참조)
+![그림4](/assets/img/posts/mathmatics/rotation/9-오일러-각/tait-bryan-angle.png){: width="500" height="400"}
+_그림 4: 개선된 오일러 각의 구조 [참고](https://en.wikipedia.org/wiki/Euler_angles#Tait%E2%80%93Bryan_angles)_
 
 20세기 초, 수학자 겸 물리학자인 Peter Guthrie Tait와 George Hartley Bryan의 앞 글자를 따서, 새로운 오일러 각 표현법이 생겨났다.
 
@@ -144,8 +151,10 @@ Z-Y-X, X-Y-Z 처럼 서로 다른 3개의 축에 대한 회전으로 각각의 �
 > 각각 X,Y,Z축의 회전 각도를 roll$(\phi)$, pitch$(\theta)$, yaw$(\psi)$ 라 부른다.
 {: .prompt-tip}
 
-[그림5](항공기의 roll pitch yaw)
+![그림5](/assets/img/posts/mathmatics/rotation/9-오일러-각/rpy.png){: width="500" height="400"}
+_그림 5 : 항공기의 Body Frame과 roll, pitch, yaw_
 
+> 참고 : [Euler angles, altiernative name](https://en.wikipedia.org/wiki/Euler_angles#Alternative_names)  
 > 참고 : [항공기의 Body Frame, NED](https://www.vectornav.com/resources/inertial-navigation-primer/math-fundamentals/math-refframes)
 
 
@@ -155,7 +164,8 @@ Z-Y-X, X-Y-Z 처럼 서로 다른 3개의 축에 대한 회전으로 각각의 �
 이 중에서도 3D 짐벌에 사용되는 수학적 모델이 오일러 각 방식과 일치한다. 
 
 아래의 영상을 보면, 어떤 것인지 이해할 수 있다.
-[유튜브영상](짐벌락)
+
+{% include embed/youtube.html id='zc8b2Jo7mno?si=UmTyWRx1qiJcDF65&amp;start=44' %}
 
 2번째 회전각이 $\frac{\pi}{2}$ 또는 $-\frac{\pi}{2}$가 되면 1번째와 3번째 회전링이 같은 면 상에 정렬되면서 회전 자유도를 하나 잃어버리게 된다.  
 이는 원하는 방향으로의 각속도를 만들어 낼 수 없다는 뜻이 된다. 
@@ -179,7 +189,8 @@ Z-Y-X, X-Y-Z 처럼 서로 다른 3개의 축에 대한 회전으로 각각의 �
 
 주의할 점은, $R_y$의 방향이 나머지들과 반대라는 점인데, 이는 우리가 오른손 법칙을 따르는 좌표계를 사용하기 때문이다.  
 
-[그림6](오른손 법칙과 각도 마이너스)
+![그림6](/assets/img/posts/mathmatics/rotation/9-오일러-각/right_hand_axis_y.png){: width="500" height="400"}
+_그림 6: y축 회전과 x-z 평면_
 
 그림 6을 보자. $y$축으로 $\theta$만큼 회전하면, $x-z$ 평면상에서는 $-\theta$ 만큼 회전하는 것이기 때문에, 기존의 2차원 회전 행렬 형태에서 반대 방향으로 회전시키는 것 처럼 보인다.
 
@@ -229,8 +240,6 @@ R = R_z R_y R_x \label{e2}
 > - active rotation(벡터를 회전시키는) 회전 행렬 기준
 > - 곱해진 순서는 intrinsic 회전 기준
 > - 오른손 법칙 좌표계 기준
-> 
-> [그림7](대충 표)
 {: .prompt-tip}
 
 ## 오일러각-각속도 변환 행렬
@@ -341,6 +350,36 @@ v &= \begin{bmatrix} \theta_x & \theta_y & \theta_z \end{bmatrix}^T = \begin{bma
 즉, 짐벌락에 걸린 것이다. 
 
 ## 오일러 각 표현법의 장단점
+
 ### 장점
-gpt로 조사 예정
+**직관적이다**  
+오일러 각 표현법은 각각의 각도가 직관적이다. Tait-Bryan angle등의 표현에서는 x,y,z축 각도를 바로바로 roll, pitch, yaw로 대응시킬 수 있다.  
+각도값의 변화가 실제 자세에 어떻게 반영될 지 상상하기 쉽다.
+이 점 때문에, 3D 포토샵이나 컴퓨터 그래픽스 등의 직관성이 중요한 부분에서 많이 사용되곤 한다.
+
+**움직임 제한이 용이**  
+때로는 자세를 제한하고 싶을 때 유용하다. 예를 들어 양 옆으로 30도 이상 기울어지지 않게 막고 싶거나, 고개를 90도 이상 돌리지 못하게 막고 싶을 때 유용하다.
+
 ### 단점
+
+**짐벌락**  
+오일러 각 표현법의 가장 치명적인 단점 중 하나이다. 특정 자세에서 하나의 회전 자유도를 잃어버리는 이 현상은 제한없는 연속적인 회전이 필요한 분야에 적용하기에 큰 걸림돌이다.  
+물론 쿼터니안은 이런 거 없다.
+
+**표현 방식의 애매모호함**  
+오일러 각 표현법은 intrinsic & extrinsic이나, x-y-z 등의 추가적인 사항들을 미리 약속해야 사용할 수 있다. 이는 3개의 오일러 각의 배열만으로는 이것이 어떤 회전을 의미하는지 알 수 없음을 의미한다.  
+조금만 부주의하면 오일러 각을 다르게 해석해서 실수나 오류가 날 수 있다.
+
+**특이점**  
+element rotation을 다루는 과정에서, 어떤 경우에는 0으로 나누거나 하는 등의 정의되지 않은 연산이 일어날 수 있다. 수치 에러에 취약한 편.
+
+**수학적으로 복잡함**  
+오일러 각 표현과 다른 표현법 사이의 변환 (로드리게스, 회전 행렬, 쿼터니안 등) 방식이 까다로운 편이다. 수학적으로도 복잡하며, 삼각함수를 포함하기 때문에 컴퓨팅 자원을 많이 소모한다.
+
+**보간이 힘들다**  
+2개의 서로 다른 자세를 오일러 각으로 보간하는 것은 힘들다. 선형 보간된 오일러 각은 애니메이션이나 시뮬레이션 상에서 이상한 모션으로 종종 이어진다. 
+결국 구면 보간 방식을 사용해야 하는데, 이는 쿼터니안이 해결할 수 있다.
+
+결론은 오일러 각 표현법은 사람에게 직관적이라는 점을 빼면, 수학적으로는 영 좋은 방법은 아니다.
+
+> 다음 포스트는 입이 닳도록 언급한 사원수(쿼터니안)에 대해 다룰 것이다.
