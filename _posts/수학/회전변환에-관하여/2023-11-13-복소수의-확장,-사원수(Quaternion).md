@@ -170,7 +170,7 @@ $q \in \mathbb{H}, q=w+xi+jk+zk$
 $q=w+xi+yj+zk, \vec{v}=(x,y,z)$라 할 때, $w$를 실수부, $\vec{v}$를 허수부라 한다. 
 
 2. **크기(절대값)**  
-$\lvert q \rvert = \sqrt{w^2+x^2+y^2+z2} = \sqrt{w^2+\lVert \vec{v} \rVert^2}$
+$\lvert q \rvert = \sqrt{w^2+x^2+y^2+z^2} = \sqrt{w^2+\lVert \vec{v} \rVert^2}$
 
 3. **덧셈**  
 $q_1 + q_2 = (w_1 + w_2) + (x_1 + x_2)i + (y_1 + y_2)j + (z_1+z_2)k$
