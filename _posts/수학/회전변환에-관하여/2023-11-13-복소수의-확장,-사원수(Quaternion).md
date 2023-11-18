@@ -12,7 +12,7 @@ date: 2023-11-13 23:00:00 +0900
 categories: [수학, 회전변환에 관하여]
 
 # 태그 세팅. n 개의 배열이다.
-tags: [Mathmatics, Attitude Representation, Vector Rotation, Vector Transform]
+tags: [수학, 회전 변환, 쿼터니언]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
