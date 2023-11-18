@@ -285,7 +285,7 @@ $$\begin{align}
 \eta &: \text{Body Rate Convert Matrix} \nonumber
 \end{align}$$
 
-실제 변환 행렬 $\eta$의 값을 구하면 각각의 행 벡터들의 합이며, 다음과 같다. 
+실제 변환 행렬 $\eta$의 값을 구하면 각각의 열 벡터들의 합이며, 다음과 같다. 
 
 $$\begin{align}
 R_x^T R_y^T &= \left[\begin{array}{c|c|c}?&?&R_3 \end{array} \right] \nonumber \\[7pt]
