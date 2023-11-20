@@ -216,4 +216,4 @@ The image below will toggle dark/light mode based on theme preference, notice it
 ## test post editting
 
 
-<!-- [복소수의 확장, 사원수(Quaternion)]({% post_url /수학/회전변환에-관하여/2023-11-13-복소수의-확장,-사원수(Quaternion) %}#쿼터니언-곱의-행렬-표현) -->
+<!-- [복소수의 확장, 사원수(Quaternion)]({% post_url /수학/회전변환에-관하여/2023-11-13-복소수의-확장,-사원수(Quaternion) %}) -->
