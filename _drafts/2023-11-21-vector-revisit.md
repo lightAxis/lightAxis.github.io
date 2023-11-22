@@ -73,16 +73,22 @@ published: true
 > \end{align}$$
 {: .prompt-info}
 
-> 참고 : [Vector Notation](https://en.wikipedia.org/wiki/Vector_notation)  
+> 참고 : [Vector Notation](https://en.wikipedia.org/wiki/Vector_notation), [Types of Numbers](https://en.wikipedia.org/wiki/List_of_types_of_numbers#Main_types)  
 
 > 행렬 표현 방식에서 가로로 쓰는 버전도 있긴 하지만, 이는 공변벡터(Covariance), 반변벡터(Contravariance)와 관련되어 있다. 우리가 사용하는 벡터는 거의 반변벡터이므로 세로로 표기하는 경우가 많다. ([공변 벡터 & 반변 벡터](https://en.wikipedia.org/wiki/Covariance_and_contravariance_of_vectors))
 
-> 수학에서 수의 집합을 지칭하는 대표적인 표기는 다음과 같다.
-> 
-> - $\mathbb{N}$ : 자연수
-> - $\mathbb{Z}$ : 정수
-> - $\mathbb{Q}$ : 유리수
-> - $\mathbb{R}$ : 실수
-> - $\mathbb{C}$ : 복소수
-> - $\mathbb{H}$ : 사원수
-{: .prompt-tip}
+## 벡터의 연산들
+
+다음의 벡터, $\vec{a}, \vec{b} \in \mathbb{R}^n, \vec{a}=(a_1, a_2,\cdots,a_n), \vec{b} = (b_1, b_2, \cdots,b_n)$와 $\vec{a_3}, \vec{b_3} \in \mathbb{R}^3$와 스칼라 $k \in \mathbb{R}$에 대해서 다음의 연산이 가능하다
+
+- 덧셈 뺄셈  
+$\vec{a}\pm \vec{b} = (a_1 \pm b_1, a_2 \pm b_2 ,\cdots, a_n \pm b_n)$
+
+- 스칼라곱  
+$k\vec{a} = (k a_1, k a_2, \cdots, k a_n)$
+
+- 내적  
+$\vec{a} \cdot \vec{b} = a_1b_1 + a_2 b_2 + \cdots + a_n b_n$
+
+- 외적
+$\vec{a_3} \times \vec{b_3}=\left(\begin{vmatrix}a_2 & a_3 \\ b_2 & b_3\end{vmatrix}, - \left\right)$
