@@ -229,5 +229,63 @@ $$\begin{align}
 
 ## 행렬 미분 종류 & Layout 총정리
 
-![그림1](/assets/img/posts/mathmatics/optimization/matrix-calculus/image.png)
+![그림1](/assets/img/posts/mathmatics/optimization/matrix-calculus/layouts.png)
 _참고 : [Matrix calculus : Layout conventions](https://en.wikipedia.org/wiki/Matrix_calculus#Layout_conventions)_
+
+## 미분의 성질
+
+### 벡터/벡터
+![벡터/벡터 미분의 성질](/assets/img/posts/mathmatics/optimization/matrix-calculus/vector_vector_identities.png)
+_참고 : [Matrix calculus : Vector-by-bector identities](https://en.wikipedia.org/wiki/Matrix_calculus#Vector-by-vector_identities)_
+
+### 스칼라/벡터 
+![스칼라/벡터 미분의 성질1](/assets/img/posts/mathmatics/optimization/matrix-calculus/scalar_vector_identities_1.png)
+![스칼라/벡터 미분의 성질2](/assets/img/posts/mathmatics/optimization/matrix-calculus/scalar_vector_identities_2.png)
+_참고 : [Matrix calculus : Scalar-by-vector identities](https://en.wikipedia.org/wiki/Matrix_calculus#Scalar-by-vector_identities)_
+
+양이 많아 보이지만, 요약하면 주요 법칙들은 몇개 안된다. 
+
+대표적으로 위의 벡터/벡터 미분의 성질표에서 아래 다섯가지 정도만 알아도 대부분의 문제를 해결할 수 있다.
+
+$v = v(\mathbf{x})$,   
+$\mathbf{u},\mathbf{v} = \mathbf{u}(\mathbf{x}), v(\mathbf{x})$,  
+$\mathbf{A}$는 $\mathbf{x}$에 대한 행렬이 아님.  
+Numerator Layout, 
+
+$$\begin{align}
+\frac{\partial \mathbf{x}}{\partial \mathbf{x}} &= I,\text{(Identitiy)} \\[1em]
+\frac{\partial (\mathbf{u}+\mathbf{v})}{\partial \mathbf{x}} &= \frac{\partial \mathbf{u}}{\partial \mathbf{x}} + \frac{\partial \mathbf{v}}{\partial \mathbf{x}}, \text{(additive preserved)} \\[1em]
+\frac{\partial v \mathbf{u}}{\partial \mathbf{x}} &= v \frac{\partial \mathbf{u}}{\partial \mathbf{x}} + \mathbf{u} \frac{\partial v}{\partial \mathbf{x}}, \text{(scalar vector)} \\[1em]
+\frac{\partial \mathbf{A}\mathbf{u}}{\partial \mathbf{x}} &= A \frac
+{\partial \mathbf{u}}{\partial \mathbf{x}}, \text{(matrix vector)} \\[1em]
+\frac{\partial \mathbf{g}(\mathbf{u})}{\partial \mathbf{x}} &= \frac{\partial \mathbf{g}(\mathbf{u})}{\partial \mathbf{u}} \frac{\partial \mathbf{u}}{\partial \mathbf{x}}, \text{(chain rule)}
+\end{align}$$
+
+스칼라/벡터 미분의 경우도 핵심적인 법칙은 아래와 같다. 
+
+$$\begin{align}
+\frac{\partial (u+v)}{\partial \mathbf{x}} &= \frac{\partial u}{\partial \mathbf{x}} + \frac{\partial v}{\partial \mathbf{x}} \\[1em]
+\frac{\partial uv}{\partial \mathbf{x}} &= u \frac{\partial v}{\partial \mathbf{x}} + v \frac{\partial u}{\partial \mathbf{x}} \\[1em]
+\frac{\partial u(g)}{\partial \mathbf{x}} &= \frac{\partial u(g)}{\partial g} \frac{\partial g}{\partial \mathbf{x}} \\[1em]
+\frac{\partial \mathbf{u}^T \mathbf{A} \mathbf{v}}{\partial \mathbf{x}} &= \mathbf{u}^T \mathbf{A} \frac{\partial \mathbf{v}}{\partial \mathbf{x}} + \mathbf{v}^T \mathbf{A} \frac{\partial \mathbf{u}}{\partial \mathbf{x}}
+\end{align}$$
+
+
+나머지 내용들은 거의 다 위의 법칙들을 조합해서 나온 것들이다.
+예를 들어 : 
+
+$$\begin{align}
+\frac{\partial \mathbf{a}^T \mathbf{x} \mathbf{x}^T \mathbf{b}}{\partial \mathbf{x}} &= \frac{\partial \mathbf{a}^T \mathbf{x}}{\partial \mathbf{x}} \cdot \left( \mathbf{x}^T \mathbf{b} \right) + \left( \mathbf{a}^T\mathbf{x} \right) \cdot \frac{\partial \mathbf{x}^T \mathbf{b}}{\partial \mathbf{x}} \nonumber \\[1em]
+&= \mathbf{a}^T \cdot \left( \mathbf{x}^T \mathbf{b} \right)  + \left( \mathbf{a}^T\mathbf{x} \right) \cdot \mathbf{b}^T \nonumber \\[1em]
+&= \left(\mathbf{x}^T \mathbf{b}\right) \cdot \mathbf{a}^T + \left(\mathbf{x}^T \mathbf{a} \right) \cdot \mathbf{b}^T \nonumber \\[1em]
+&= \mathbf{x}^T \left( \mathbf{a}\mathbf{b}^T +  \mathbf{b} \mathbf{a}^T\right) \\
+\nonumber \\
+\frac{\partial \lVert \mathbf{x} - \mathbf{a}
+ \rVert}{\partial \mathbf{x}} &= \frac{\partial}{\partial \mathbf{x}}\left[ \left(\mathbf{x} - \mathbf{a} \right)^T\left( \mathbf{x} - \mathbf{a}\right) \right]^{1/2} \nonumber \\[1em]
+ &= \frac{1}{2}\frac{1}{\sqrt{\left(\mathbf{x}-\mathbf{a}\right)^T\left(\mathbf{x}-\mathbf{a} \right)}} \frac{\partial}{\partial \mathbf{x}}\left[ (\mathbf{x} - \mathbf{a})^T (\mathbf{x} - \mathbf{a}) \right] \nonumber \\[1em]
+ &= \frac{1}{2 \lVert\mathbf{x} -\mathbf{a} \rVert}\left( 2 (\mathbf{x} - \mathbf{a})^T \frac{\partial (\mathbf{x} - \mathbf{a})}{\partial \mathbf{x}} \right) \nonumber \\[1em]
+ &= \frac{1}{2\lVert \mathbf{x} - \mathbf{a} \rVert}\left(2(\mathbf{x} - \mathbf{a})^T I \right) \nonumber \\[1em]
+ &= \frac{(\mathbf{x} - \mathbf{a})^T}{\lVert \mathbf{x}-\mathbf{a}\rVert}
+\end{align}$$
+
+등이 있다. 
