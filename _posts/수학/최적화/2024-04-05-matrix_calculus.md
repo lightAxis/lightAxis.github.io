@@ -129,7 +129,7 @@ $$\begin{align}
 
 ### 행렬 / 스칼라
 
-행렬 $\mathbf{A} \in \mathbb{R^{p \times q}}$에 대해서 : 
+행렬 $\mathbf{A} \in \mathbb{R}^{p \times q}$에 대해서 : 
 
 $$\begin{align}
 \frac{\partial \mathbf{A}}{\partial a} &= \begin{bmatrix}
@@ -189,7 +189,7 @@ $$\begin{align}
 
 ### 벡터 / 벡터
 
-두개의 벡터 $\mathbf{x} \in \mathbb{R^n}, \mathbf{y} \in \mathbb{R^m}$ 에 대해서 : 
+두개의 벡터 $\mathbf{x} \in \mathbb{R}^n, \mathbf{y} \in \mathbb{R}^m$ 에 대해서 : 
 
 $$\begin{align}
 \frac{\partial \mathbf{y}}{\partial \mathbf{x}} &= \begin{bmatrix}
