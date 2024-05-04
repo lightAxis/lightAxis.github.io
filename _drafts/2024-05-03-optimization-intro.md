@@ -100,7 +100,7 @@ a^2 + b^2 &= (1-b)^2 + b^2 = 1 - 2b + b^2 + b^2 = 2b^2 - 2b + 1 \nonumber \\
 
 또는 $a^2 + b^2 = r^2$임을 사용해서, 중심이 원점이고 반지름이 $r$인 원이라고 생각하면, 기하 문제로 바꿀 수도 있다 : 
 
-_여기에 대충 원과 직선 교점 그림_
+![그래프](/assets/img/posts/mathmatics/optimization/matrix-calculus/graph.png){: width="500" height="400"}
 
 이렇게 최적화 문제는 다양한 방법으로 해결될 수 있지만,  
 **조금만 복잡해지면 기존의 방법들이 매우 힘들게 된다**
