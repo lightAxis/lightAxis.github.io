@@ -6,7 +6,7 @@ title: 최적화 이론 소개
 author: JiseokLee
 
 # 포스트가 올라간 날짜. 한국은 GMT+09이므로 +0900 이다
-date: 2024-05-02 21:33:00 +0900 
+date: 2024-05-05 21:33:00 +0900 
 
 # 카테고리 세팅. n개의 배열이며, 순서대로 부모->자식 관계이다
 categories: [수학, 최적화]
@@ -74,9 +74,9 @@ published: true
 > $x \in \mathbb{R}^n$ : 실수 n차원 벡터 $x$  
 > $f : \mathbb{R}^n \rightarrow \mathbb{R}$ : 실수 n차원 벡터를 받아 실수를 반환하는 함수 $f$
 
-이떄, 위의 제약 조건들을 전부 만족하는 영역을 $D$(feasible domain)이라 한다.이 feasiblie domain 안에서 cost function을 최소로 만드는 벡터는 보통 $x^*$라 표현하고, 이를 optimal solution 이라 한다. (당연히 $x \in D$ 이다)
+이떄, 위의 제약 조건들을 전부 만족하는 영역을 $D$(feasible domain)이라 한다.이 feasiblie domain 안에서 cost function을 최소로 만드는 벡터는 보통 $x^* $라 표현하고, 이를 optimal solution 이라 한다. (당연히 $x^* \in D$ 이다)
 
-대부분의 상황에서 optimal value 보다는 optimal solution, $ x* $ 을 찾는 것에 더 관심이 많다. 어차피 $x*$ 을 알아낸 순간, $f(x*)$ 을 하면 되니까. 
+대부분의 상황에서 optimal value 보다는 optimal solution, $ x^* $ 을 찾는 것에 더 관심이 많다. 어차피 $x^* $ 을 알아낸 순간, $f(x^{*})$ 을 하면 되니까. 
 
 ### 예시
 
@@ -122,7 +122,7 @@ $$\begin{align}
 f(x) &= (a-1)^2 + (a-b)^2 + (b+2c)^2 + (a+b+d)^2 + 12 \\
 \nonumber \\
 \therefore f(x) & \text{ minimized at : } a=1, b=1, c=-0.5, d=-2,  \nonumber \\
-x* &= \begin{bmatrix}1 & 1 & -0.5 & -2\end{bmatrix}^T
+x^* &= \begin{bmatrix}1 & 1 & -0.5 & -2\end{bmatrix}^T
 \end{align}$$
 
 하지만 매번 이럴 순 없다. 변수가 100개라면? 1천개라면? 저렇게 제곱식으로 묶인다는 보장이 있는가?
