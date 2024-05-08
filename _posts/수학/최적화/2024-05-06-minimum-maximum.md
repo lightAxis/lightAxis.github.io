@@ -59,8 +59,6 @@ published: true
 하지만 그것은 암묵적으로 $D = (- \infty, + \infty)$ 임을 깔고 들어가기 때문에 나온 답이다.
 $D = [1, \infty]$인 구간에서의 최소값을 찾으라고 하면 더 이상 $x=0$은 최소값이 아니게 된다. 따라서 최소값과 최대값이라는 것 자체가 항상 그것이 정의된 구간이 있어야 의미가 있다.
 
-__간단한 그림__
-
 **이때 구간에 따라 특이한 성질을 갖는 지점이 있다. 바로 극대와 극소이다.**
 
 고등학교 교과서에 나온 극대와 극소의 사전적인 정의는 다음과 같다 :  
@@ -243,7 +241,7 @@ _$f=x^2-y^2$의 그래프_
 
 ### Positive definite matrix, Negative definite matrix
 
-어떠한 행렬이 Positive definite matrix인지, Negative definite matrix인지 판별하는 방법은 다음과 같다 : 
+Positive definite matrix인지, Negative definite matrix는 정방행렬에 대해서만 정의되며, 다음과 같다 :  
 
 > $$\begin{align}
 > \text{Positive definite matrix} & : \text{모든 벡터 } x \neq 0 \text{에 대해 } x^T H x > 0 \\
@@ -282,4 +280,4 @@ f(a,b,c) &= 2a^2 + 5b^2 + c^2 -4ab - 2bc \nonumber \\
 > 반대는 Negative semidefinite matrix이다.
 
 
-2번 미분 가능하고 연속인 Convex 함수에 대해서, 전 구간에서의 헤시안 행렬이 positive definite 임이 증명되어 있다.
+2번 미분 가능하고 연속인 Convex 함수에 대해서, 전 구간에서의 헤시안 행렬이 positive semidefinite 임이 증명되어 있다.
