@@ -16,8 +16,8 @@ tags: [Optimization]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/optimization/matrix-calculus/jacket.png
-  alt: Responsive rendering of Chirpy theme on multiple devices.
+  path: /assets/img/posts/mathmatics/optimization/minimum-maximum/jacket.png
+  alt: 대표적인 말안장점을 가진 x^2-y^2 함수의 그래프
 
 # 홈에 pin으로 걸어놓을지 결정한다.
 pin: false
@@ -111,7 +111,8 @@ $f(x) = x^3 + 3x^2 - 9x + 5 = (x-1)^2(x+5)$,
 $f'(x) = 3x^2 + 6x - 9 = 3(x-1)(x+3)$,  
 $f''(x) = 6x + 6=6(x+1)$
 
-__위함수의그림__
+![1var_graph](/assets/img/posts/mathmatics/optimization/minimum-maximum/1var_graph.png){: width="500" height="400"}
+_$f(x) = x^3 + 3x^2 - 9x + 5$의 그래프_
 
 이때, 재미있는 점은, $f''$의 부호에 따라 함수가 볼록한 구간과 오목한 구간이 나뉘어 진다는 것이다.  
 이 아이디어는 미분가능한 다변수 함수의 헤시안 행렬(Hessian matrix)과, positive definite matrix, negative definite matrix의 개념으로 확장된다.
@@ -126,7 +127,7 @@ __위함수의그림__
 > \frac{\partial f}{\partial x} = 0, \begin{cases}
 > \frac{\partial^2 f}{\partial x^2} \text{ : positive definite matrix} & \rightarrow \text{극소(local minimum point)} \\
 > \frac{\partial^2 f}{\partial x^2} \text{ : negative definite matrix} & \rightarrow \text{극대(local maximum point)} \\
-> \text{else} & \rightarrow \text{말안장점(saddle point)}
+> \text{else : indefinite} & \rightarrow  \text{말안장점(saddle point)}
 > \end{cases}
 > \end{align}$$
 {: .prompt-info}
@@ -169,7 +170,11 @@ $$\begin{align}
 
 다양한 지점에서의 그라디언트 벡터를 그려보면, 해당 방향에서 값이 증가하는 벡터를 나타냄을 알 수 있다. 
 
-__위함수의그림과그라디언트벡터__
+![2var_graph](/assets/img/posts/mathmatics/optimization/minimum-maximum/3dgraph2d.png){: width="500" height="400"}
+_위에서 내려다본 $f=x^2 + y^2 + 2$의 그래프와 그라디언트 벡터_
+
+![2var_graph2](/assets/img/posts/mathmatics/optimization/minimum-maximum/3dgraph.png){: width="500" height="400"}
+_3D 뷰_
 
 이때, $\nabla f = 0$이 되는 지점은 일변수 함수때와 마찬가지로 극점의 후보가 될 수 있다. 
 
@@ -208,12 +213,33 @@ H(f_2) = \begin{bmatrix}
 
 일변수 함수의 2계도함수와 비슷한 개념이며, 다변수 함수로의 확장판이다. 이때, 기존의 극점 판별에 사용했던 2계도 함수의 극값 판별법을 역시도 다변수 함수로 확장 가능하며, 여기서 positive definite matrix, negative definite matrix의 개념이 사용된다.
 
-헤시안 행렬은 해당 지점에서의 곡률에 대한 정보를 나타내는데, 이게 positive definite matrix라는 뜻은 해당 지점에서의 모든 방향으로의 곡률이 양수임을 의미한다.  
-즉, 해당 지점에서 모든 방향으로 함수가 아래로 볼록하게 구부러져 있음을 나타낸다. 이는 극소점(local minimum point)을 의미한다.
+헤시안 행렬은 해당 지점에서의 곡률에 대한 정보를 나타내는데, 이게 **positive definite matrix**라는 뜻은 해당 지점에서의 모든 방향으로의 곡률이 양수임을 의미한다.  
+즉, 해당 지점에서 모든 방향으로 함수가 아래로 볼록하게 구부러져 있음을 나타내므로 이는 **극소점(local minimum point)**이 된다.
 
-반대로 negative definite matrix라는 뜻은 해당 지점에서의 모든 방향으로의 곡률이 음수임을 의미한다. 즉, 해당 지점에서 모든 방향으로 함수가 위로 오목하게 구부러져 있음을 나타낸다. 이는 극대점(local maximum point)을 의미한다.
+반대로 **negative definite matrix**이면 해당 지점에서의 모든 방향으로의 곡률이 음수임을 의미한다. 즉, 해당 지점에서 모든 방향으로 함수가 위로 오목하게 구부러져 있으므로 이는 **극대점(local maximum point)**을 의미한다.
 
-positive, negative 둘 다 아니라면, 일변수함수에서의 
+
+indefinite이라면, 일변수함수에서의 변곡점과 같은 구조가 되는데, 보통 말안장점(saddle point)라 한다. 마치 말안장 처럼 생겨서 그런 이름이 붙었다.  
+대표적으로 $f(x,y) = x^2 - y^2$의 그래프를 살펴보면 : 
+
+$$\begin{align}
+\nabla f &= \begin{bmatrix}
+2x \\ -2y
+\end{bmatrix}, \quad H(f) = \begin{bmatrix}
+2 & 0 \\ 0 & -2
+\end{bmatrix} \nonumber \\
+\nabla f &= 0 \text{ at } x=y=0 \nonumber \\
+H(f) & \text{ is not negative nor positive definite matrix} \nonumber \\
+& \Rightarrow (0,0) \text{ is saddle point}
+\end{align}$$
+
+이렇게 생긴 그래프이다
+
+
+![2var_saddle](/assets/img/posts/mathmatics/optimization/minimum-maximum/3dgraph_saddle.png){: width="500" height="400"}
+_$f=x^2-y^2$의 그래프_
+
+진짜로 말안장을 닮아서 saddle point라고 불린다
 
 ### Positive definite matrix, Negative definite matrix
 
@@ -246,7 +272,7 @@ $$\begin{align}
 f(a,b,c) &= 2a^2 + 5b^2 + c^2 -4ab - 2bc \nonumber \\
 &= a^2 + (a-2b)^2 + (b-c)^2 \geq 0 \nonumber \\
 &= \begin{bmatrix}a & b & c\end{bmatrix} \begin{bmatrix}2a-2b \\ -2a+5b-c \nonumber \\ -b+c\end{bmatrix} \nonumber \\
-&= \begin{bmatrix}a & b & c\end{bmatrix} \begin{bmatrix}2 & -2 & 0 \\ -2 & 5 & -1 \\ 0 & -1 & 1\end{bmatrix} \begin{bmatrix}a \\ b \\ c\end{bmatrix} \geq 0 \nonumber \\
+&= \begin{bmatrix}a & b & c\end{bmatrix} \begin{bmatrix}2 & -2 & 0 \\ -2 & 5 & -1 \\ 0 & -1 & 1\end{bmatrix} \begin{bmatrix}a \\ b \\ c\end{bmatrix} \nonumber \\
 & = x^T H x \geq 0, x = \begin{bmatrix}a & b & c\end{bmatrix}^T \\
 \nonumber \\
 & \therefore H \text{ : Positive semidefinite matrix} \nonumber
@@ -254,3 +280,6 @@ f(a,b,c) &= 2a^2 + 5b^2 + c^2 -4ab - 2bc \nonumber \\
 
 > Positive definite matrix이면서, 동시에 0도 될 수 있는 matrix를 Positive semidefinite matrix라고 한다.   
 > 반대는 Negative semidefinite matrix이다.
+
+
+2번 미분 가능하고 연속인 Convex 함수에 대해서, 전 구간에서의 헤시안 행렬이 positive definite 임이 증명되어 있다.

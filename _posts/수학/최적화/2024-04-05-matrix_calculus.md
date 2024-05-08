@@ -17,7 +17,7 @@ tags: [Optimization]
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
   path: /assets/img/posts/mathmatics/optimization/matrix-calculus/jacket.png
-  alt: Responsive rendering of Chirpy theme on multiple devices.
+  alt: 벡터를 벡터로 편미분하는 모습
 
 # 홈에 pin으로 걸어놓을지 결정한다.
 pin: false
