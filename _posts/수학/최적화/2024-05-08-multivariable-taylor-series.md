@@ -110,7 +110,7 @@ $$f(x) \approx f(a) + f'(a)(x-a)$$
 ### 정의
 다변수 함수로의 테일러 확장은 다음과 같이 정의된다 : 
 
-> **다변수 함수의 테일러 확장**
+> **다변수 함수의 테일러 확장**  
 > 다변수 함수 $f(x_1, x_2, \ldots, x_n)$가 $a_1, a_2, \ldots, a_n$에서 무한히 미분 가능할 때, 다음과 같은 테일러 급수로 확장할 수 있다.
 > $$\begin{align}
 > f(x_1, x_2, \ldots, x_n) &= f(a_1, a_2, \ldots, a_n) + \sum_{i=1}^{n} \frac{\partial f}{\partial x_i}(a_1, a_2, \ldots, a_n)(x_i - a_i) \nonumber \\
@@ -127,7 +127,7 @@ $$f(x) \approx f(a) + f'(a)(x-a)$$
 
 위 식에서 1차식 까지만을 자르면, 1차 테일러 근사는 다음과 같다 : 
 
-> **1차 테일러 근사**
+> **1차 테일러 근사**  
 > $$f(x_1, x_2, \ldots, x_n) \approx f(a_1, a_2, \ldots, a_n) + \sum_{i=1}^{n} \frac{\partial f}{\partial x_i}(a_1, a_2, \ldots, a_n)(x_i - a_i)$$
 > 
 > 이를 행렬 미분의 형태, 또는 gradient vector로 표현하면 다음과 같다 : 
