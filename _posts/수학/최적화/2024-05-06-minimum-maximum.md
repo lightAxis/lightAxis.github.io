@@ -280,4 +280,36 @@ f(a,b,c) &= 2a^2 + 5b^2 + c^2 -4ab - 2bc \nonumber \\
 > 반대는 Negative semidefinite matrix이다.
 
 
+### 선행 주 소행렬식(leading principal minors)
+
+대칭행렬 $A \in \mathbb{R}^{n \times n}, A^T=A$에 대해서, 선행 주 소행렬식(leading principal minors)를 체크하면 Positive definite matrix인지, Negative definite matrix인지 판별할 수 있다.
+
+$A$의 leading principal minors는 $A$의 첫 $k$개의 행과 열을 선택하여 만든 $k \times k$ 부분행렬의 행렬식들을 말한다.  
+예를 들어, $\begin{bmatrix}a & b \\ c & d\end{bmatrix}$의 leading principal minors는 $\lvert \begin{bmatrix} a\end{bmatrix} \rvert$,$\left\lvert \begin{bmatrix} a & b \\ c & d\end{bmatrix} \right\rvert$로 2개다. 
+
+
+이때, 정방행렬 $A$가 Positive definite matrix이기 위해서는, $A$의 모든 leading principal minors가 양수이어야 한다. 
+$k$ 번째 principal minor를 $D_k$라고 했을 때 다음과 같이 표현할 수 있다 : 
+
+$$\begin{align}
+D_1 &> 0, D_2 > 0, \cdots, D_n > 0 \nonumber \\
+\end{align}$$
+
+반대로, Negative definite matrix이기 위해서는, $A$의 leading principal minors가 번갈아가며 음수, 양수가 되어야 한다 : 
+
+$$\begin{align}
+D_1 < 0, D_2 > 0, D_3 < 0, \cdots, (-1)^n D_n > 0 \nonumber \\
+\end{align}$$
+
+이를 그림으로 표현하면 다음과 같다
+
+![principal_minors](/assets/img/posts/mathmatics/optimization/minimum-maximum/principal_minor.jpg){: width="500" height="400"}
+_출처 : [https://blog.naver.com/modernyoon/221578605613](https://blog.naver.com/modernyoon/221578605613)_
+
+이도저도 아니면 indefinite 행렬이다.
+
+### Convex function과의 관계
+
 2번 미분 가능하고 연속인 Convex 함수에 대해서, 전 구간에서의 헤시안 행렬이 positive semidefinite 임이 증명되어 있다.
+
+반대로 전 구간에서의 헤시안 행렬이 positive semidefinite 이면, 해당 함수는 Convex 함수이다.
