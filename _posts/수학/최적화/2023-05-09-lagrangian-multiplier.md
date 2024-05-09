@@ -293,9 +293,9 @@ $$\nabla f(x^* ) + \sum \lambda_i \nabla g_i = 0, \lambda_i \in \mathbb{R}$$
 > 참고 : [Penrose_inverse - Minimum norm solution to a linear system](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse#Minimum_norm_solution_to_a_linear_system)  
 > 참고 : [Penrose_inverse - Linear least-squares](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse#Linear_least-squares)  
 
-### 행보다 열이 작은 경우
+### 행보다 열이 큰 경우
 
-행렬 $A \in \mathbb{R}^{m \times n}$, $m > n$, 벡터 $x \in \mathbb{R}^n$, $b \in \mathbb{R}^m$가 주어졌다고 하자. 이때, $Ax = b$를 만족하는 $x$를 찾는 문제를 풀어보자.  
+행렬 $A \in \mathbb{R}^{m \times n}$, $m < n$, 벡터 $x \in \mathbb{R}^n$, $b \in \mathbb{R}^m$가 주어졌다고 하자. 이때, $Ax = b$를 만족하는 $x$를 찾는 문제를 풀어보자.  
 
 $A$가 정방행렬이 아니므로 $A^{-1}$는 정의되지 않는다. 그리고 위 등식을 만족하는 $x$는 무한히 많기 까지 하다. 
 
@@ -333,9 +333,9 @@ $$\begin{align}
 이는 무어-펜로즈 유사 역행렬의 결과와 동일하다.
 
 
-### 행보다 열이 큰 경우
+### 행보다 열이 작은 경우
 
-이번에는 행렬 $A \in \mathbb{R}^{m \times n}$, $m < n$, 벡터 $x \in \mathbb{R}^n$, $b \in \mathbb{R}^m$가 주어졌다고 하자. 이때, $Ax = b$를 최대한 만족하는 $x$를 찾는 문제를 풀어보자. 
+이번에는 행렬 $A \in \mathbb{R}^{m \times n}$, $m > n$, 벡터 $x \in \mathbb{R}^n$, $b \in \mathbb{R}^m$가 주어졌다고 하자. 이때, $Ax = b$를 최대한 만족하는 $x$를 찾는 문제를 풀어보자. 
 
 이때, 무어-펜로즈 유사 역행렬을 사용하면, $Ax$와 $b$의 오차제곱합이 제일 작은 $x$를 찾을 수 있으며 다음과 같다 : 
 
