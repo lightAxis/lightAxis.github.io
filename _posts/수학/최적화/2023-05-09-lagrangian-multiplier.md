@@ -6,7 +6,7 @@ title: 라그랑주 승수법(Lagrange multiplier method)과 극값 판정
 author: JiseokLee
 
 # 포스트가 올라간 날짜. 한국은 GMT+09이므로 +0900 이다
-date: 2024-05-08 21:34:00 +0900 
+date: 2024-05-09 19:45:00 +0900 
 
 # 카테고리 세팅. n개의 배열이며, 순서대로 부모->자식 관계이다
 categories: [수학, 최적화]
