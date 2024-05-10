@@ -264,16 +264,16 @@ $x^2 > 0$ 이기 때문에, $a$가 양수이면 $ax^2$도 양수가 되고, 음�
 
 똑같이 $x^Tx = \lVert x \rVert^2 >0$ 이기 때문에, $H$가 Positive definite matrix이면, $x^T H x$도 양수가 되고, Negative 버전은 음수가 된다.
 
-다른 이해 방식은 다변수함수의 2차항의 부호로 생각하는 방법도 있다. 예를 들어 $f(a,b,c) = 2a^2 + 5b^2 + c^2 -4ab - 2bc$는, $f \geq 0$을 만족하는데,  이를 완전제곱식의 합과, 행렬로 동시에 표현하면 다음과 같다 : 
+다른 이해 방식은 다변수함수의 2차항의 부호로 생각하는 방법도 있다. 예를 들어 $f(a,b,c) = 2a^2 + 5b^2 + c^2 -4ab - 2bc$는,$(a,b,c) \neq 0$이면 $f > 0$을 만족하는데,  이를 완전제곱식의 합과, 행렬로 동시에 표현하면 다음과 같다 : 
 
 $$\begin{align}
 f(a,b,c) &= 2a^2 + 5b^2 + c^2 -4ab - 2bc \nonumber \\
-&= a^2 + (a-2b)^2 + (b-c)^2 \geq 0 \nonumber \\
+&= a^2 + (a-2b)^2 + (b-c)^2 >0 \nonumber \\
 &= \begin{bmatrix}a & b & c\end{bmatrix} \begin{bmatrix}2a-2b \\ -2a+5b-c \nonumber \\ -b+c\end{bmatrix} \nonumber \\
 &= \begin{bmatrix}a & b & c\end{bmatrix} \begin{bmatrix}2 & -2 & 0 \\ -2 & 5 & -1 \\ 0 & -1 & 1\end{bmatrix} \begin{bmatrix}a \\ b \\ c\end{bmatrix} \nonumber \\
-& = x^T H x \geq 0, x = \begin{bmatrix}a & b & c\end{bmatrix}^T \\
+& = x^T H x > 0, x = \begin{bmatrix}a & b & c\end{bmatrix}^T \\
 \nonumber \\
-& \therefore H \text{ : Positive semidefinite matrix} \nonumber
+& \therefore H \text{ : Positive definite matrix} \nonumber
 \end{align}$$
 
 > Positive definite matrix이면서, 동시에 0도 될 수 있는 matrix를 Positive semidefinite matrix라고 한다.   
