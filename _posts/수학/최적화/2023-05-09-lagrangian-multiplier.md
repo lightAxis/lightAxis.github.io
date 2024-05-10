@@ -149,12 +149,12 @@ Bordered Hessian 행렬 자체는 언제나 indefinite 일 수 밖에 없는데,
 
 ### 문제 자체가 Convex Problem인지 판별
 
-목적함수와 제약 조건들의 교집합을 constrainted surface 라 하기도 하는데, 
-이 constrainted surface 자체가 convex면 그때의 극점은 반드시 극소점임이 보장된다.  
+목적함수와 제약 조건들의 교집합을 constrained surface 라 하기도 하는데, 
+이 constrained surface 자체가 convex면 그때의 극점은 반드시 극소점임이 보장된다.  
 즉, 이 문제 자체가 convex optimization 문제에 속한다면 극값이 곧 극소점이므로, 
 극값만 구해도 된다.
 
-equality constrainted minimizing 문제가 convex optimization 문제인지 판별하는 방법은 다음과 같다 :
+equality constrained minimizing 문제가 convex optimization 문제인지 판별하는 방법은 다음과 같다 :
 
 1. 목적함수와 제약 조건들이 모두 convex function이어야 한다.
 2. 제약 조건들이 affine function이어야 한다.
@@ -250,7 +250,7 @@ $$\begin{align}
 
 어떤 실수 벡터 $x \in \mathbb{R}^n$, 함수 $f(x) : \mathbb{R}^n \rightarrow \mathbb{R}$, $m$개의 제약 조건들 $g_i(x) : \mathbb{R}^n \rightarrow \mathbb{R}, i = 1, 2, \cdots, m$이 주어졌다고 하자. 이 제약 최적화 문제의 최적해가 $x^* $ 로 존재한다 가정한다.
 
-이때, $r(t) = \begin{bmatrix} x_1(t) & \cdots & x_n(t) \end{bmatrix}^T$를   constrainted surface 상의 곡선이고, 변수 $t$로 파라미터화 되어있으며, $t=0$일때 optimal solution $x^* $인 곡선으로 정의하자.  
+이때, $r(t) = \begin{bmatrix} x_1(t) & \cdots & x_n(t) \end{bmatrix}^T$를   constrained surface 상의 곡선이고, 변수 $t$로 파라미터화 되어있으며, $t=0$일때 optimal solution $x^* $인 곡선으로 정의하자.  
 즉, $r(0) = x^*$이며, constrained surface 상에 있으므로 $g_i(r(t)) = 0$도 만족한다.  
 
 이제 새로운 함수 $\hat{f}(t) = f(r(t))$를 정의하자. 이 함수는 $t=0$에서 최소값을 가지므로 미분하면 해당 지점에서 0이 되어야 한다. 
@@ -266,7 +266,7 @@ $$\begin{align}
 
 따라서 $\nabla f(x^* )$는 $r'(0)$에 언제나 수직이므로 $x^*$에서 모든 곡선에 대해 수직이 된다.
 
-다음으로 제약 조건들도 미분해보자. 새로운 함수 $\hat{g}_i(t) = g_i(r(t))$를 정의한다. 이 함수는 처음부터 constrainted surface 상의 곡선 $r(t)$가 입력으로 들어가므로, 언제나 $\hat{g}_i(t)=0$이 된다. 양변을 $t$에 대해 미분해도 여전히 우변은 0이 된다. 
+다음으로 제약 조건들도 미분해보자. 새로운 함수 $\hat{g}_i(t) = g_i(r(t))$를 정의한다. 이 함수는 처음부터 constrained surface 상의 곡선 $r(t)$가 입력으로 들어가므로, 언제나 $\hat{g}_i(t)=0$이 된다. 양변을 $t$에 대해 미분해도 여전히 우변은 0이 된다. 
 
 이에 제약 조건 함수들을 한번에 합쳐서 표현하면 다음과 같다 : 
 
