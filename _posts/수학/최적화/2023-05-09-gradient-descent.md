@@ -139,8 +139,7 @@ _step size에 따른 수렴 경로 차이. [출처](https://www.stat.cmu.edu/~ry
 - (b)는 step size가 너무 작아서, 100번의 반복을 해도 수렴하지 못했다.
 - (c)는 step size가 딱 맞아서, 40번의 반복 후 수렴했다.
 
-이때 딱 맞는 step size에 대한 내용은 수렴 분석(Convergence analysis)에서 다루는데, 양이 상당히 많아서 기회가 되면 다루겠다. 
-어차피 [여기](https://convex-optimization-for-all.github.io/contents/chapter06/2021/03/20/06_03_convergence_analysis/)의 내용을 내가 이해한 대로 다시 적게 될 거니 들어가보면 된다.
+이때 딱 맞는 step size에 대한 내용은 수렴 분석(Convergence analysis)에서 다룬다. 이 포스트의 마지막에서 증명의 내용만 말하고, 자세한 증명 과정은 해당 페이지를 참고하자.
 
 ### Exact line search
 
@@ -253,17 +252,41 @@ y &= f(x_i) + \alpha \nabla f(x_i)^T \Delta x t \nonumber \\
 
 를 하는 것임을 이해할 수 있다.
 
-## 선형 목적 함수의 closed form solution
+## Convergence Analysis
 
-선형 다변수 함수의 일반형은 다음과 같다 :
+수렴 분석은 경사하강법의 수렴 속도를 분석하는 것이다. 
 
-$$\begin{align}
-f(x) = Ax + b
-\end{align}$$
+이때 함수 $f$가 convex 하고, differentiable 하고, $\nabla f$가 Lipschitz continuous 하며, 그때의 Lipshitz constant 가 $L$ 임을 가정한다.
 
-## 2차 목적 함수의 closed form solution
+Lipshitz continuous는 어떤 함수 $g(x)$가 다음과 같은 조건을 만족할 때를 말한다.
 
-2차 다변수 함수의 일반형은 다음과 같다 :
-$$\begin{align}
-f(x) = \frac{1}{2}x^T Q x + c^T x + d
-\end{align}$$
+> **Lipschitz continuous**
+> 
+> $$\begin{align}
+> \lVert g(x) - g(y) \rVert_2 \leq L \lVert x - y \rVert_2, L \geq 0
+> \end{align}$$
+> 
+> $L$ : Lipschitz constant
+{: .prompt-info}
+ 
+쉽게 말하면, 두 점 사이의 기울기를 일정 크기 이상으로 증가시키지 않는 함수이다. 기울기의 크기에 상한이 있다고 생각하면 된다. 
+> 참고 : [Lipschitz continuity](https://en.wikipedia.org/wiki/Lipschitz_continuity)
+
+
+이때 경사하강법은 fixed step size $t \leq 1/L$ 에서 다음과 같은 속도로 수렴한다.
+
+> $$\begin{align}
+> f(x_k) - f(x^*) \leq \frac{\lVert x_0 - x^* \rVert^2_2}{2tk}
+> \end{align}$$
+{: .prompt-info}
+
+backtracking line searching를 했을 땐 다음과 같은 속도로 수렴한다
+
+> $$\begin{align}
+> t_{min} &= \min{(1, \beta / L)} \nonumber \\
+> f(x_k) - f(x^*) &\leq \frac{\lVert x_0 - x^* \rVert^2_2}{2 t_{min} k}, t_{min} = \min{(1, \beta / L)}
+> \end{align}$$
+{: .prompt-info}
+
+위 두 정리에 대한 자세한 유도 과정은 다음을 참고하자
+> 참고 : [모두를 위한 컨벡스 최적화-Gradient Descent/Convergence analysis](https://convex-optimization-for-all.github.io/contents/chapter06/2021/03/20/06_03_convergence_analysis/)
