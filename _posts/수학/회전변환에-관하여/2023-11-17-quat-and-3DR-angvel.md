@@ -40,11 +40,11 @@ published: true
 ---
 
 > 쿼터니언으로부터 회전 행렬을 유도해 본다.
-> 쿼터니언의 미분과, 각속도 벡터와의 관계를 유도한다. 
+> 쿼터니언의 미분과, 각속도 벡터와의 관계를 유도한다.
 
 ## 회전 행렬로의 변환
 
-쿼터니언 $q = w + xi+yj+zk = w + \vec{v}$를 사용한 3차원 벡터의 회전 행렬을 유도해 본다. 
+쿼터니언 $q = w + xi+yj+zk = w + \vec{v}$를 사용한 3차원 벡터의 회전 행렬을 유도해 본다.
 
 앞서  쿼터니언의 곱에 대해 다음의 식이 성립함을 보고 가자
 
@@ -64,7 +64,7 @@ $$\begin{align}
 a,b,c &\text{ : in matrix form} \nonumber \\
 \nonumber \\
 &\text{1. } \vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a}, \nonumber \\
-&a^T b = b^T a \nonumber \\ 
+&a^T b = b^T a \nonumber \\
 \nonumber \\
 &\text{2. } \vec{a}\times\vec{b} = - \vec{b} \times \vec{a} \nonumber \\
 &\left[a\right]_\times b  = -\left[b\right]_\times a \nonumber \\
@@ -80,7 +80,7 @@ a,b,c &\text{ : in matrix form} \nonumber \\
 &\text{(백캡 공식, bac-cab)} \nonumber
 \end{align}$$
 
-이제 3차원 벡터, $\vec{p}\rightarrow \vec{p'}$의 회전 식을 전개하겠다. 
+이제 3차원 벡터, $\vec{p}\rightarrow \vec{p'}$의 회전 식을 전개하겠다.
 
 $$\begin{align}
 \vec{p'} &= q \otimes \vec{p} \otimes \overline{q} \nonumber \\
@@ -91,7 +91,7 @@ $$\begin{align}
 &= -w(\vec{v}\cdot\vec{p}) + w(\vec{v}\cdot\vec{p}) + \vec{p}\cdot(\vec{v}\times\vec{v}) \nonumber \\
 &= 0 \nonumber \\
 \nonumber \\
-(b) &: (\vec{v}\cdot\vec{p})\vec{v} + w^2 \vec{p} + w(\vec{v}\times\vec{p})+\left[ w\vec{p}\times(\vec{v}\times\vec{p})\right]\times(-\vec{v}) \nonumber \\ 
+(b) &: (\vec{v}\cdot\vec{p})\vec{v} + w^2 \vec{p} + w(\vec{v}\times\vec{p})+\left[ w\vec{p}\times(\vec{v}\times\vec{p})\right]\times(-\vec{v}) \nonumber \\
 &=  (\vec{v}\cdot\vec{p})\vec{v} + w^2 \vec{p} + w(\vec{v}\times\vec{p})+\vec{v}\times\left[ w\vec{p} + (\vec{v}\times\vec{p}) \right] \nonumber \\
 &=  (\vec{v}\cdot\vec{p})\vec{v} + w^2 \vec{p} + w(\vec{v}\times\vec{p})+w(\vec{v}\times \vec{p}) + \vec{v}\times(\vec{v}\times\vec{p}) \nonumber \\
 \nonumber \\
@@ -113,8 +113,8 @@ $$\begin{align}
 \therefore R &= \begin{bmatrix} 1-2(y^2+z^2) & 2(xy-wz) & 2(xz+wy) \\ 2(xy + wz) & 1-2(x^2+z^2) & 2(yz-wx) \\ 2(xz-wy) & 2(yz+wx) & 1-2(x^2+y^2)\end{bmatrix}
 \end{align}$$
 
-> 따라서 쿼터니언 $q \in \mathbb{H}, q=w+xi+yj+zk$ 에 대해 3차원 벡터 회전 행렬은 다음과 같다. 
-> 
+> 따라서 쿼터니언 $q \in \mathbb{H}, q=w+xi+yj+zk$ 에 대해 3차원 벡터 회전 행렬은 다음과 같다.
+>
 > $$\begin{align}
 > R &= \begin{bmatrix} 1-2(y^2+z^2) & 2(xy-wz) & 2(xz+wy) \\ 2(xy + wz) & 1-2(x^2+z^2) & 2(yz-wx) \\ 2(xz-wy) & 2(yz+wx) & 1-2(x^2+y^2)\end{bmatrix}
 > \end{align}$$
@@ -126,8 +126,7 @@ $$\begin{align}
 
 복소수와 미분을 통한 각속도의 관계는 [이 포스트]({% post_url /수학/회전변환에-관하여/2023-10-28-non-differenciable-angle-complex %}#{{ "복소수의-미분과-각속도" | url_encode}}) 에서 유도했다.
 
-
-복소수 때 처럼 쿼터니언을 미분해 보면 다음과 같다. 
+복소수 때 처럼 쿼터니언을 미분해 보면 다음과 같다.
 
 $$\begin{align}
 \frac{d}{dt}q &= \frac{d}{dt}\left(\cos{\theta} + \vec{u}\sin{\theta}\right) \nonumber \\
@@ -136,18 +135,18 @@ $$\begin{align}
 \end{align}$$
 
 음.. 뭐 아무 감이 안잡힌다.  
-다른 방식으로 접근해 보자. 
+다른 방식으로 접근해 보자.
 
-**이번에는 미분의 정의를 사용할 것이다.** 
+**이번에는 미분의 정의를 사용할 것이다.**
 
 $$\begin{align}
 \lim_{\Delta t\rightarrow 0}{\frac{q(t + \Delta t) - q(t)}{\Delta t}} = \dot{q}
 \end{align}$$
 
-기준계 $I$와 Body 좌표계 $B$가 있다.   
+기준계 $I$와 Body 좌표계 $B$가 있다.
 $I$에서 관찰한 $B$의 임의의 시간 $t$에서의 자세 쿼터니언을 $q(t)$라 하자.  
 이제 $q(t)$에서 $\Delta t$초 만큼 각속도 벡터 $\vec{\omega}$로 회전된 다음의 자세 쿼터니언을 $q(t + \Delta t)$라 하자.  
-이때, $\vec{\omega}$가 기준계 $I$에서 관찰한 각속도 벡터, $\vec{\omega_I}$인 경우, 다음이 성립한다. 
+이때, $\vec{\omega}$가 기준계 $I$에서 관찰한 각속도 벡터, $\vec{\omega_I}$인 경우, 다음이 성립한다.
 
 $$\begin{align}
 q(t + \Delta t) = q_{\omega} \otimes q(t) \\
@@ -159,7 +158,7 @@ q_\omega = e^{\normalsize  \frac{\Delta t}{2}\vec{\omega}}
 $$\begin{align}
 q(t + \Delta t) - q(t) &= \left(e^{\normalsize  \frac{\Delta t}{2}\vec{\omega}} - 1\right) \otimes q(t) \nonumber \\
 &= \left[ \cos{\left( \frac{\Delta t}{2} \lVert \vec{\omega} \rVert \right)} - 1 + \frac{\vec{\omega}}{\lVert \vec{\omega}  \rVert} \sin{\left( \frac{\Delta t}{2} \lVert \vec{\omega} \rVert  \right)} \right] \otimes q(t) \nonumber \\
-\nonumber \\ 
+\nonumber \\
 \lim_{\Delta t\rightarrow 0}{\frac{q(t + \Delta t) - q(t)}{\Delta t}} &= \left[ \lim_{\Delta t \rightarrow 0}{\frac{\cos{\left( \frac{\Delta t}{2} \lVert \vec{\omega} \rVert \right)} - 1}{\Delta t}} + \frac{\vec{\omega}}{\lVert \vec{\omega} \rVert} \lim_{\Delta t \rightarrow 0}{\frac{\sin{\left( \frac{\Delta t}{2} \lVert \vec{\omega} \rVert  \right)} }{\Delta t}} \right] \otimes q(t) \nonumber \\[5pt]
 &= \left[0 + \frac{\vec{\omega}}{\lVert \vec{\omega} \rVert} \frac{\lVert \vec{\omega} \rVert}{2} \right] \otimes q(t) \nonumber \\[5pt]
 \nonumber \\
@@ -167,19 +166,19 @@ q(t + \Delta t) - q(t) &= \left(e^{\normalsize  \frac{\Delta t}{2}\vec{\omega}} 
 => \dot{q} &= \frac{\vec{\omega}}{2}\otimes q \nonumber \\
 \end{align}$$
 
-> 위 식 $\eqref{e2}$을 정리하면, 쿼터니언과 각속도에 대한 식은 다음과 같다. 
-> 
+> 위 식 $\eqref{e2}$을 정리하면, 쿼터니언과 각속도에 대한 식은 다음과 같다.
+>
 > $$\begin{align}
 > 2\dot{q}\otimes \bar{q} &= \vec{\omega_I} \\
 > \vec{\omega} &: \vec{\omega_I}, \text{angular Velocity represented at }I\text{ frame} \nonumber
 > \end{align}$$
 {: .prompt-info}
 
-> 하지만, 비행체의 자세 제어 분야에서는 오히려 $I$프레임 말고, $B$ 프레임에서 표현된 각속도 벡터가 더 쓸모 있다. 
-> 
+> 하지만, 비행체의 자세 제어 분야에서는 오히려 $I$프레임 말고, $B$ 프레임에서 표현된 각속도 벡터가 더 쓸모 있다.
+>
 > $\bar{q} \otimes \vec{\omega_I} \otimes q = \vec{\omega_B}$로 프레임 변환을 할 수 있으니,  
-> 다음과 같이 구할 수 있다. 
-> 
+> 다음과 같이 구할 수 있다.
+>
 > $$\begin{align}
 > \bar{q} \otimes \left(2\dot{q} \otimes \bar{q}\right) \otimes q &= \bar{q} \otimes (\vec{\omega_I}) \otimes q \nonumber \\
 > \nonumber \\
@@ -188,4 +187,4 @@ q(t + \Delta t) - q(t) &= \left(e^{\normalsize  \frac{\Delta t}{2}\vec{\omega}} 
 > \end{align}$$
 {: .prompt-info}
 
-이 관계는 다양한 곳에 적용될 수 있는데, 예를 들면 강체의 Euler-Lagrange Equation에서 일반화 좌표계(generalized coordinate)로 쿼터니언을 사용할 때 적용 가능하다. 
+이 관계는 다양한 곳에 적용될 수 있는데, 예를 들면 강체의 Euler-Lagrange Equation에서 일반화 좌표계(generalized coordinate)로 쿼터니언을 사용할 때 적용 가능하다.

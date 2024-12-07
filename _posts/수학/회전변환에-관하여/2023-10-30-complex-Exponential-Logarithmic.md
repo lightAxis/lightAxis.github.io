@@ -44,7 +44,7 @@ published: true
 
 ## 테일러 급수(Taylor Series)와 매클로린 급수(Maclaurin Series)
 
-지수로써의 복소수를 이야기하기 전에, 전개 과정에서 필요한 부분을 먼저 짚고 넘어가려 한다. 
+지수로써의 복소수를 이야기하기 전에, 전개 과정에서 필요한 부분을 먼저 짚고 넘어가려 한다.
 
 지수함수는 [초월함수](https://ko.wikipedia.org/wiki/%EC%B4%88%EC%9B%94%ED%95%A8%EC%88%98)지만, 우리가 복소수에 대해서 지금까지 정의한 부분은 대수 연산들 뿐이다(덧셈, 곱셈, 거듭제곱 등).  
 따라서, 초월함수를 대수 연산들로 분해할 수 있는 방법이 필요한데, 그 중 하나가 바로 `테일러 급수(Taylor Series)`이다.
@@ -53,7 +53,7 @@ published: true
 
 > 무한히 미분 가능한 정칙 함수(Holomorphic function) $f:\mathbb{C} -> \mathbb{C}$ 및 복소수 $a \in \mathbb{C}$가 주어졌을 때,  
 > $f$의 테일러 급수는 다음과 같은 멱급수이다.
-> 
+>
 > $$\begin{align}
 > f(x) &= f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + \cdots \\
 > &= \sum_{i=0}^{\infty}\frac{f^{(n)}(a)}{n!}(x-a)^n
@@ -83,7 +83,7 @@ published: true
 
 ### 일단 냅다 e의 지수로 올려버리기
 
-임의의 복소수 $z=a+bi, a,b \in \mathbb{R}$ 라 할때, 
+임의의 복소수 $z=a+bi, a,b \in \mathbb{R}$ 라 할때,
 일단 냅다 $e^{a+bi}$를 생각해보자.  
 이는 다음과 같이 분해될 수 있다.
 
@@ -92,11 +92,11 @@ e^{a+bi} = e^a e^{bi} \nonumber
 \end{align}$$
 
 우리는 이미 $e^a \in \mathbb{R}$임을 알고 있으므로, 별로 신기한 것은 아니다.  
-이제 우리의 관심은 대체 $e^{bi}$를 어떻게 해석할 것인지로 넘어간다. 
+이제 우리의 관심은 대체 $e^{bi}$를 어떻게 해석할 것인지로 넘어간다.
 
 ### 테일러 급수와 오일러 등식
 
-위에서 소개한 $e^{x}$의 매클로린 급수를 사용해 보자. 
+위에서 소개한 $e^{x}$의 매클로린 급수를 사용해 보자.
 
 식 $\eqref{e_ex}$ ~ $\eqref{e_cos}$에 의하면, 다음과 같다.
 
@@ -111,7 +111,7 @@ e^{bi} &= 1 + \frac{bi}{1!} +\frac{(bi)^2}{2!} + \frac{(bi)^3}{3!} + \frac{(bi)^
 바로 오일러 공식이다.
 
 > 오일러 공식(Euler's formula)
-> 
+>
 > $$\begin{align} \large
 > e^{\theta i} = \cos{\theta} + i \sin{\theta} \\
 > \text{if }\theta = \pi, e^{i \pi} + 1 = 0
@@ -123,7 +123,7 @@ e^{bi} &= 1 + \frac{bi}{1!} +\frac{(bi)^2}{2!} + \frac{(bi)^3}{3!} + \frac{(bi)^
 ### Exponential Form과 극형식
 
 오일러 항등식을 자세히 살펴보면, 재미있는 점이 보인다.  
-$e^{\theta i}$를 복소평면에 표시해보면 다음과 같다. 
+$e^{\theta i}$를 복소평면에 표시해보면 다음과 같다.
 
 ![그림1](/assets/img/posts/mathmatics/rotation/6-복소수의-exponential과-극형식/complex_plane_exponential_form.png){: width="500" height="400"}
 _그림 1 : 복소평면 상에서 복소수의 Exponential_
@@ -131,7 +131,7 @@ _그림 1 : 복소평면 상에서 복소수의 Exponential_
 이를 통해 다음의 성질을 확인할 수 있다.
 
 > 복소수의 Exponential Form은 극형식과 다음의 관계가 있다.
-> 
+>
 > $$\begin{align}
 > \text{let } z = re^{\theta i}, \text{than} \nonumber\\
 > \left\vert z \right\vert = r \nonumber \\
@@ -140,16 +140,16 @@ _그림 1 : 복소평면 상에서 복소수의 Exponential_
 {: .prompt-info}
 
 즉, 기존의 극형식이라고 부르던 것을 복소수의 지수 형태로 표현할 수 있음을 의미한다.  
-이를 통해 복소수 간의 곱셈이 의미하는 바를 더욱 명확하게 표현할 수 있다. 
+이를 통해 복소수 간의 곱셈이 의미하는 바를 더욱 명확하게 표현할 수 있다.
 
-이제 길이가 $r_1, r_2$ 이고 편각이 $\alpha, \beta$인 복소수 $z_1, z_2$를 곱했을 때, 자연스러운 연산이 가능하다. 
+이제 길이가 $r_1, r_2$ 이고 편각이 $\alpha, \beta$인 복소수 $z_1, z_2$를 곱했을 때, 자연스러운 연산이 가능하다.
 
 $$\begin{align}
 z_1 = r_1 e ^{\alpha}, z_2 = r_2 e^{\beta} \nonumber \\
 z_1 \cdot z_2 = r_1 r_2 e^{(\alpha + \beta)}
 \end{align}$$
 
-기존의 지수법칙이 동작하듯이, 마치 극형식으로 표현된 편각이 더해짐을 알 수 있다. 
+기존의 지수법칙이 동작하듯이, 마치 극형식으로 표현된 편각이 더해짐을 알 수 있다.
 
 ### Exponential의 미분과 각속도
 
@@ -159,7 +159,7 @@ $$\begin{align}
 z = e^{\theta i} &= \cos{\theta} + i\sin{\theta} \nonumber \\
 \frac{d}{dt}e^{\theta i} &= \frac{d}{dt}\left( \cos{\theta} + i\sin{\theta} \right) \nonumber \\
 &= -\dot{\theta}\sin{\theta}+\dot{\theta} i \cos{\theta} \nonumber \\
-&= \dot{\theta} i \left( \cos{\theta} +  i \sin{\theta} \right)  \nonumber\\ 
+&= \dot{\theta} i \left( \cos{\theta} +  i \sin{\theta} \right)  \nonumber\\
 &= \dot{\theta} i \cdot e^{\theta i} \label{e1}
 \end{align}$$
 
@@ -187,15 +187,13 @@ z \cdot \overline{z} &= re^{\theta i} \cdot re^{-\theta i} \nonumber \\
 
 서로 정 반대의 두 편각은 곱해지면서 사라지고, 실수부만 길이가 그대로 제곱되어 남는 것으로 해석할 수 있다.
 
-
-이전에  $\left\vert z \right\vert = 1, arg(z) = \theta$인 자세 복소수 $z$에 대해서 각속도를 구했던 식은 다음과 같다. 
-
+이전에  $\left\vert z \right\vert = 1, arg(z) = \theta$인 자세 복소수 $z$에 대해서 각속도를 구했던 식은 다음과 같다.
 
 $$\begin{align}
 \dot{z} \cdot \bar{z} &= \dot{\theta} i
 \end{align}$$
 
-이제 각속도를 다시 Exponential Form을 통해 유도해 보면 다음과 같다. 
+이제 각속도를 다시 Exponential Form을 통해 유도해 보면 다음과 같다.
 
 $$\begin{align}
 \text {from }\eqref{e1}, \nonumber \\
@@ -207,6 +205,6 @@ $$\begin{align}
 이제 평면의 회전과 자세를 수 하나로 표현할 수 있게 되었으며,
 미분을 통해 각속도를 유도하는 것도 수학적으로 매끄러워졌다.
 
-이 정도면 2차원의 자세에 대한 거의 모든것은 다 봤다고 봐도 무방하다. 
+이 정도면 2차원의 자세에 대한 거의 모든것은 다 봤다고 봐도 무방하다.
 
 다음 포스트부터는 3차원의 자세에 대해 시작할 예정이다.
