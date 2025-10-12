@@ -271,7 +271,7 @@ $$(a_1 \ a_2 \ \cdots \ a_n) = (a_1 \ a_2)(a_2 \ a_3) \cdots (a_{n-1} \ a_n)$$
 
 > **교대군(Alternating group)**
 > 
-> $A_n = \{ \sigma \in S_n \mid sgn(\sigma) = +1 \}$  
+> $A_n = \\{ \sigma \in S_n \mid sgn(\sigma) = +1 \\}$  
 > 즉, 짝순열들로만 이루어진 $S_n$ 부분군
 {: .prompt-info}
 
@@ -283,7 +283,7 @@ $sgn(\sigma \tau) = sgn(\sigma) \cdot sgn(\tau)$ for all $\sigma, \tau \in S_n$
 
 순열의 부호가 transpositon의 개수에 따라 결정되므로, $$sgn(\sigma) = (-1)^{m}, \quad sgn(\tau) = (-1)^{n}$$ 이고, $$\sigma \tau$$ 는 $m+n$개의 transposition의 곱으로 나타낼 수 있으므로, $$sgn(\sigma \tau) = (-1)^{m+n} = (-1)^m \cdot (-1)^n = sgn(\sigma) \cdot sgn(\tau)$$ 이다.
 
-이제 집합 $A_n = \{ \sigma \in S_n \mid sgn(\sigma) = +1 \}$ 가 부분군임을 보이자.
+이제 집합 $A_n = \\{ \sigma \in S_n \mid sgn(\sigma) = +1 \\}$ 가 부분군임을 보이자.
 
 1. 항등원  
    항등원 $e$에 대해, $sgn(e) = +1$ 이므로, $e \in A_n$ 이다.
