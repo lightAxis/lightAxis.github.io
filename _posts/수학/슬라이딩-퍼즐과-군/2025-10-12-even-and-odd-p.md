@@ -252,7 +252,18 @@ $$(a_1 \ a_2 \ \cdots \ a_n) = (a_1 \ a_2)(a_2 \ a_3) \cdots (a_{n-1} \ a_n)$$
 
 따라서, disjoint cycle representation으로 나타낸 순열 $\sigma$에 대해, 각각의 cycle을 transposition의 곱으로 또 나타낼 수 있으므로, 결국 모든 순열은 transposition의 곱으로 나타낼 수 있음을 알 수 있다.
 
-이로써 **모든 순열은 반드시 짝순열 또는 홀순열로 나뉠 수 있다** 는 것을 보였다.
+### transposition의 부호는 유일할까?
+
+마지막 의심으로, transposition의 개수의 부호가 정말 유일한지 의심할 수 있다.  
+예를 들어, 어떤 순열을 분해했는데, 이리 저리 분해했더니 각각 짝수번과 홀수번의 transposition으로 나타낼 수 있다면 모순이 생긴다. 
+
+다행히도 그럴 수 없음을 이미 앞에서 보였다. 
+
+앞서 순열을 유한개의 transposition의 곱으로 나타낼 수 있다면, 그 개수의 짝홀이 반드시 inversion의 수의 짝홀과 같음을 보였다.
+이제 inversion의 수는 순열의 고유한 특성이므로 , transposition의 개수의 짝홀 역시 순열의 고유한 특성이 된다.
+
+직전에 순열을 유한개의 transposition의 곱으로 나타낼 수 있음까지 보였으므로,  
+**모든 순열은 반드시 짝수 transposition 또는 홀수 transposition으로 나뉠 수 있으며, 그 부호는 유일하다** 는 것을 알 수 있다.
 
 ## 교대군과 순열의 부호
 
@@ -268,7 +279,7 @@ $$(a_1 \ a_2 \ \cdots \ a_n) = (a_1 \ a_2)(a_2 \ a_3) \cdots (a_{n-1} \ a_n)$$
 
 $sgn(\sigma \tau) = sgn(\sigma) \cdot sgn(\tau)$ for all $\sigma, \tau \in S_n$
 
-이건 아주 쉽다. 
+이건 앞에서 해 놓은 게 많아서 아주 쉽다. 
 
 순열의 부호가 transpositon의 개수에 따라 결정되므로, $$sgn(\sigma) = (-1)^{m}, \quad sgn(\tau) = (-1)^{n}$$ 이고, $$\sigma \tau$$ 는 $m+n$개의 transposition의 곱으로 나타낼 수 있으므로, $$sgn(\sigma \tau) = (-1)^{m+n} = (-1)^m \cdot (-1)^n = sgn(\sigma) \cdot sgn(\tau)$$ 이다.
 
@@ -283,7 +294,8 @@ $sgn(\sigma \tau) = sgn(\sigma) \cdot sgn(\tau)$ for all $\sigma, \tau \in S_n$
 3. 역원  
    임의의 $\sigma \in A_n$ 에 대해, $sgn(\sigma^{-1}) = sgn(\sigma)^{-1} = +1^{-1} = +1$ 이므로, $\sigma^{-1} \in A_n$ 이다.
 
-따라서, $A_n$은 $S_n$의 부분군임을 알 수 있다.
+따라서, $A_n$은 $S_n$의 부분군임을 알 수 있다.   
+**이 사실을 꼭 기억해 주자.** 
 
 ## 마치며
 
