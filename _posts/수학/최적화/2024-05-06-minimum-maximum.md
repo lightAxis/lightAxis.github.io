@@ -16,7 +16,7 @@ tags: [Optimization]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/optimization/minimum-maximum/jacket.png
+  path: /assets/img/posts/mathematics/optimization/minimum-maximum/jacket.png
   alt: 대표적인 말안장점을 가진 x^2-y^2 함수의 그래프
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -109,7 +109,7 @@ $f(x) = x^3 + 3x^2 - 9x + 5 = (x-1)^2(x+5)$,
 $f'(x) = 3x^2 + 6x - 9 = 3(x-1)(x+3)$,  
 $f''(x) = 6x + 6=6(x+1)$
 
-![1var_graph](/assets/img/posts/mathmatics/optimization/minimum-maximum/1var_graph.png){: width="500" height="400"}
+![1var_graph](/assets/img/posts/mathematics/optimization/minimum-maximum/1var_graph.png){: width="500" height="400"}
 _$f(x) = x^3 + 3x^2 - 9x + 5$의 그래프_
 
 이때, 재미있는 점은, $f''$의 부호에 따라 함수가 볼록한 구간과 오목한 구간이 나뉘어 진다는 것이다.  
@@ -168,10 +168,10 @@ $$\begin{align}
 
 다양한 지점에서의 그라디언트 벡터를 그려보면, 해당 방향에서 값이 증가하는 벡터를 나타냄을 알 수 있다. 
 
-![2var_graph](/assets/img/posts/mathmatics/optimization/minimum-maximum/3dgraph2d.png){: width="500" height="400"}
+![2var_graph](/assets/img/posts/mathematics/optimization/minimum-maximum/3dgraph2d.png){: width="500" height="400"}
 _위에서 내려다본 $f=x^2 + y^2 + 2$의 그래프와 그라디언트 벡터_
 
-![2var_graph2](/assets/img/posts/mathmatics/optimization/minimum-maximum/3dgraph.png){: width="500" height="400"}
+![2var_graph2](/assets/img/posts/mathematics/optimization/minimum-maximum/3dgraph.png){: width="500" height="400"}
 _3D 뷰_
 
 이때, $\nabla f = 0$이 되는 지점은 일변수 함수때와 마찬가지로 극점의 후보가 될 수 있다. 
@@ -234,7 +234,7 @@ H(f) & \text{ is not negative nor positive definite matrix} \nonumber \\
 이렇게 생긴 그래프이다
 
 
-![2var_saddle](/assets/img/posts/mathmatics/optimization/minimum-maximum/3dgraph_saddle.png){: width="500" height="400"}
+![2var_saddle](/assets/img/posts/mathematics/optimization/minimum-maximum/3dgraph_saddle.png){: width="500" height="400"}
 _$f=x^2-y^2$의 그래프_
 
 진짜로 말안장을 닮아서 saddle point라고 불린다
@@ -303,7 +303,7 @@ D_1 < 0, D_2 > 0, D_3 < 0, \cdots, (-1)^n D_n > 0 \nonumber \\
 
 이를 그림으로 표현하면 다음과 같다
 
-![principal_minors](/assets/img/posts/mathmatics/optimization/minimum-maximum/principal_minor.jpg){: width="500" height="400"}
+![principal_minors](/assets/img/posts/mathematics/optimization/minimum-maximum/principal_minor.jpg){: width="500" height="400"}
 _출처 : [https://blog.naver.com/modernyoon/221578605613](https://blog.naver.com/modernyoon/221578605613)_
 
 이도저도 아니면 indefinite 행렬이다.

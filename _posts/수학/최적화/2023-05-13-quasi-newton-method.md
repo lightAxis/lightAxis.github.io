@@ -16,7 +16,7 @@ tags: [Optimization]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/optimization/quasi-newton-method/jacket.jpg
+  path: /assets/img/posts/mathematics/optimization/quasi-newton-method/jacket.jpg
   alt:  Quasi 뉴턴법의 몇가지 알고리즘들
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -124,7 +124,7 @@ $$\begin{align}
 
 이는 마치 두 점, $(x_k, \nabla f(x_k))$와 $(x_{k+1}, \nabla(x_{k+1}))$ 사이의 기울기와 같다.
 
-![secant-eq](/assets/img/posts/mathmatics/optimization/quasi-newton-method/secant-eq.jpg){: width="600" height="400"} _secant equation의 기하적인 해석. [출처](https://convex-optimization-for-all.github.io/contents/chapter18/2021/03/23/18_01_Secant_Equation_and_Curvature_Condition/)_
+![secant-eq](/assets/img/posts/mathematics/optimization/quasi-newton-method/secant-eq.jpg){: width="600" height="400"} _secant equation의 기하적인 해석. [출처](https://convex-optimization-for-all.github.io/contents/chapter18/2021/03/23/18_01_Secant_Equation_and_Curvature_Condition/)_
 
 ### Curvature Condition
 

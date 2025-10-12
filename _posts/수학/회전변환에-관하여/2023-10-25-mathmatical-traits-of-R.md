@@ -16,7 +16,7 @@ tags: [수학, 회전 변환, 벡터 회전]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/4-회전-행렬의-수학적-특성/jacket.png
+  path: /assets/img/posts/mathematics/rotation/4-회전-행렬의-수학적-특성/jacket.png
   alt: 회전 행렬은 왜 신기하게 생겼을까
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -59,7 +59,7 @@ $$\begin{split}
 
 ## 좌표계 축 벡터의 변환으로 증명
 
-![그림1](/assets/img/posts/mathmatics/rotation/4-회전-행렬의-수학적-특성/rotated_axis.png){: width="500" height="400"}
+![그림1](/assets/img/posts/mathematics/rotation/4-회전-행렬의-수학적-특성/rotated_axis.png){: width="500" height="400"}
 _그림1 : 회전된 좌표축의 벡터값_
 
 ### 회전된 좌표의 축 벡터와 회전 행렬의 관계
@@ -98,7 +98,7 @@ R(\theta) = \left[ \begin{array}{c|c} \cos{\theta} & -\sin{\theta} \\ \sin{\thet
 
 ### 임의의 벡터와 축의 회전 변환
 
-![그림2](/assets/img/posts/mathmatics/rotation/4-회전-행렬의-수학적-특성/2d_rotation_frame_breakdown.png){: width="500" height="400"}
+![그림2](/assets/img/posts/mathematics/rotation/4-회전-행렬의-수학적-특성/2d_rotation_frame_breakdown.png){: width="500" height="400"}
 _그림2 : 선형 결합의 배수는 유지하면서 기저 벡터만 변환된다_
 
 이를 이해하고 다시 $R(\theta)P = P'$ 식을 보자. 그림2의 점 P는 다음과 같이 2개의 축 벡터의 선형 결합으로 표현될 수 있다.  
@@ -206,7 +206,7 @@ a^T b &= a^T R^T R B \nonumber \\
 
 가만히 생각해보면, 회전 행렬 이외에도 위의 2가지 성질을 전부 만족하는 행렬이 하나 더 있는데, 바로 거울 대칭 행렬이다.
 
-![그림3](/assets/img/posts/mathmatics/rotation/4-회전-행렬의-수학적-특성/symemetric_transform.png){: width="500" height="400"}
+![그림3](/assets/img/posts/mathematics/rotation/4-회전-행렬의-수학적-특성/symemetric_transform.png){: width="500" height="400"}
 _그림3 : 대칭 변환과 각도의 보존_
 
 그림3 에서 보면, 임의의 축에 대해 거울 대칭된 벡터 $a', b'$ 역시 조건1과 조건2를 전부 만족한다.  
@@ -223,7 +223,7 @@ S = \begin{bmatrix}0 & -1 \\ -1 & 0 \end{bmatrix}
 
 1. 회전 행렬 R의 행렬식 값이 1이다, $det(R) = 1$
 
-![그림4](/assets/img/posts/mathmatics/rotation/4-회전-행렬의-수학적-특성/determinant.png){: width="300" height="300"  .right}
+![그림4](/assets/img/posts/mathematics/rotation/4-회전-행렬의-수학적-특성/determinant.png){: width="300" height="300"  .right}
 
 행렬식의 기하학적 의미는, 변환 전의 벡터쌍으로 이루어진 면적, 또는 부피가 변환 후에 어떻게 변하는지에 대한 비율이다.
 2차원 행렬에서는 두개의 벡터로 표현된 평행사변형의 넓이. 3차원 행렬에서는 3개의 벡터로 표현된 평행육면체의 부피가 변하는 것의 비율이다.

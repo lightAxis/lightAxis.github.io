@@ -16,7 +16,7 @@ tags: [수학, 회전 변환, 오일러 각]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/9-오일러-각/jacket.png
+  path: /assets/img/posts/mathematics/rotation/9-오일러-각/jacket.png
   alt: 오일러가 제안했던 3차원 회전 방식
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -70,7 +70,7 @@ published: true
 
 ### 기본 개념과 표기
 
-![그림1](/assets/img/posts/mathmatics/rotation/9-오일러-각/classical-euler.png){: width="500" height="400"}
+![그림1](/assets/img/posts/mathematics/rotation/9-오일러-각/classical-euler.png){: width="500" height="400"}
 _그림 1: 오일러 각 (classical). [참고](https://en.wikipedia.org/wiki/Euler_angles#)_
 
 그림1에서 보다시피, 오일러 각은 특정 좌표계 축을 잡고 나머지를 회전시키는 elemental rotation을 3번 합성하는 방식이다. 이때 좌표계 축을 회전시키는 순서와, 회전시키는 기준에 대한 방법을 표기해 줘야 한다.  
@@ -81,8 +81,8 @@ elemental rotation 은 특정 좌표축을 중심으로 나머지 좌표축을 �
 
 예시 : $z,y,x$ 축 방향으로 순서대로 돌리면, $z-y-x$ or 3-2-1로 표시한다.
 
-![그림2](/assets/img/posts/mathmatics/rotation/9-오일러-각/intrinsic.png){: width="500" height="400"}
-![그림3](/assets/img/posts/mathmatics/rotation/9-오일러-각/extrinsic.png){: width="500" height="400"}
+![그림2](/assets/img/posts/mathematics/rotation/9-오일러-각/intrinsic.png){: width="500" height="400"}
+![그림3](/assets/img/posts/mathematics/rotation/9-오일러-각/extrinsic.png){: width="500" height="400"}
 _그림 2: intrinsic과 extrinsic 회전 [참고](https://en.wikipedia.org/wiki/Euler_angles#)_
 
 > 참고 : [intrinsic & extrinsic rotations](https://en.wikipedia.org/wiki/Davenport_chained_rotations#Intrinsic_rotations)
@@ -117,7 +117,7 @@ $I \rightarrow B'\rightarrow B'' \rightarrow B$ 좌표계 순서대로 바뀐다
 
 ### Classic Euler Angle
 
-![그림3](/assets/img/posts/mathmatics/rotation/9-오일러-각/classical-euler.png){: width="500" height="400"}
+![그림3](/assets/img/posts/mathematics/rotation/9-오일러-각/classical-euler.png){: width="500" height="400"}
 _그림 3: 기존 오일러 각의 구조 [참고](https://en.wikipedia.org/wiki/Euler_angles#Classic_Euler_angles)_
 
 오일러가 처음 발표했던 오일러 각은 지금과는 조금 다른 형태였다.  
@@ -129,7 +129,7 @@ _그림 3: 기존 오일러 각의 구조 [참고](https://en.wikipedia.org/wiki
 
 ### Tait-Bryan Angle
 
-![그림4](/assets/img/posts/mathmatics/rotation/9-오일러-각/tait-bryan-angle.png){: width="500" height="400"}
+![그림4](/assets/img/posts/mathematics/rotation/9-오일러-각/tait-bryan-angle.png){: width="500" height="400"}
 _그림 4: 개선된 오일러 각의 구조 [참고](https://en.wikipedia.org/wiki/Euler_angles#Tait%E2%80%93Bryan_angles)_
 
 20세기 초, 수학자 겸 물리학자인 Peter Guthrie Tait와 George Hartley Bryan의 앞 글자를 따서, 새로운 오일러 각 표현법이 생겨났다.
@@ -149,7 +149,7 @@ Z-Y-X, X-Y-Z 처럼 서로 다른 3개의 축에 대한 회전으로 각각의 �
 > 각각 X,Y,Z축의 회전 각도를 roll$(\phi)$, pitch$(\theta)$, yaw$(\psi)$ 라 부른다.
 {: .prompt-tip}
 
-![그림5](/assets/img/posts/mathmatics/rotation/9-오일러-각/rpy.png){: width="500" height="400"}
+![그림5](/assets/img/posts/mathematics/rotation/9-오일러-각/rpy.png){: width="500" height="400"}
 _그림 5 : 항공기의 Body Frame과 roll, pitch, yaw_
 
 > 참고 : [Euler angles, altiernative name](https://en.wikipedia.org/wiki/Euler_angles#Alternative_names)  
@@ -186,7 +186,7 @@ _그림 5 : 항공기의 Body Frame과 roll, pitch, yaw_
 
 주의할 점은, $R_y$의 방향이 나머지들과 반대라는 점인데, 이는 우리가 오른손 법칙을 따르는 좌표계를 사용하기 때문이다.  
 
-![그림6](/assets/img/posts/mathmatics/rotation/9-오일러-각/right_hand_axis_y.png){: width="500" height="400"}
+![그림6](/assets/img/posts/mathematics/rotation/9-오일러-각/right_hand_axis_y.png){: width="500" height="400"}
 _그림 6: y축 회전과 x-z 평면_
 
 그림 6을 보자. $y$축으로 $\theta$만큼 회전하면, $x-z$ 평면상에서는 $-\theta$ 만큼 회전하는 것이기 때문에, 기존의 2차원 회전 행렬 형태에서 반대 방향으로 회전시키는 것 처럼 보인다.

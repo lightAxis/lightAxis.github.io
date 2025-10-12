@@ -16,7 +16,7 @@ tags: [수학, 퍼즐, 군론]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/sliding/4-대칭군/jacket.png
+  path: /assets/img/posts/mathematics/sliding/4-대칭군/jacket.png
   alt: 대칭군 S3의 그림
 # 홈에 pin으로 걸어놓을지 결정한다.
 pin: false
@@ -207,7 +207,7 @@ $$\begin{align}
 {: .prompt-info}
 
 이 함수가 공역의 모든 원소를 만들어 낼 수 있다는 뜻이다.
-함수의 치역(codomain)과 공역(range)이 일치하는 함수로 이해해도 된다.  
+함수의 치역(image)과 공역(codomain)이 일치하는 함수로 이해해도 된다.  
 
 > **단사 함수 (Injective function)**
 > 
@@ -231,7 +231,7 @@ $$\begin{align}
 따라서, 전단사 함수는 원래 집합의 모든 원소를 정확히 하나씩 다른 원소로 보내는 함수이다.  
 쉽게는 일대일 대응 함수라고도 부르며, 이하 간단한 예시다.
 
-![전사, 단사, 전단사](/assets/img/posts/mathmatics/sliding/4-대칭군/function_type.png){: width="700" height="300"}
+![전사, 단사, 전단사](/assets/img/posts/mathematics/sliding/4-대칭군/function_type.png){: width="700" height="300"}
 _그림 1 : (a) 아무것도 아닌 함수, (b) 전사, (c) 단사, (d)전단사_
 
 섞는 다는 것은, 어떤 원소를 정확히 다른 원소로 보내고, 모든 원소가 정확히 하나씩만 대응되는 변환이다. 
@@ -239,7 +239,8 @@ _그림 1 : (a) 아무것도 아닌 함수, (b) 전사, (c) 단사, (d)전단사
 
 예시로 앞의 $S_3$의 예시를 전단사 함수들로 다시 보이면 다음과 같다 : 
 
-![S3의 전단사 함수들](/assets/img/posts/mathmatics/sliding/4-대칭군/S3.png){: width="600" height="400"}
+![S3의 전단사 함수들](/assets/img/posts/mathematics/sliding/4-대칭군/S3.png){: width="600" height="400"}
+_그림 2 : S_3의 원소들을 전단사 함수로 표현하기_
 
 물론 유한 집합 뿐만 아니라, 무한 집합까지도 확장할 수 있는 더 일반적인 정의이다.
 
@@ -297,6 +298,22 @@ _그림 1 : (a) 아무것도 아닌 함수, (b) 전사, (c) 단사, (d)전단사
 
 눈치 챘겠지만, 슬라이딩 퍼즐의 군론적 접근 역시 이 대칭군의 개념을 주로 사용하게 될 것이다. 
 결국 퍼즐 조각을 섞는 다는 것 자체가, 바로 대칭군의 원소인 전단사 함수로써 표현될 수 있기 때문이다. 
+
+일례로, 맨 처음에 보였던 슬라이딩 퍼즐 움직임의 합성을 보자.
+
+![그림](/assets/img/posts/mathematics/sliding/4-대칭군/composition_of_sliding.png){: width="600" height="400"}
+_그림 3 : (a) 시계방향으로 돌리기, (b) 3x2크기를 시계방향으로 돌리기, (c) (a)를 한다음 (b) 하기_
+
+슬라이딩 퍼즐 나머지 15개의 조각을 섞는 저 행동을 대칭군의 싸이클 표기로 하면 : 
+
+(a) : $(11 \ 15 \ 12)$  
+(b) : $(7 \ 11 \ 15 \ 12 \ 8)$  
+(c) = (b) $\circ$ (a) : $(7 \ 11 \ 12 \ 15 \ 8)$
+
+이 된다.
+
+슬라이딩 퍼즐이 조각을 섞는 방식이 곧 대칭군의 원소이므로, 대칭군에 대해 알아갈수록 슬라이딩 퍼즐의 구조에도 더 깊이 다가갈 수 있을 것이다.
+
 
 다음으로 잠시 군론의 가장 중요한 정리 중 하나인 케일리 정리(Cayley's theorem)를 소개하려고 한다.  
 케일리 정리(Cayley's theorem)는 사실 슬라이딩 퍼즐과 직접적인 관련은 없다.   

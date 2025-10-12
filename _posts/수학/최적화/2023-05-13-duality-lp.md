@@ -16,7 +16,7 @@ tags: [Optimization]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/optimization/duality-lp/jacket.jpg
+  path: /assets/img/posts/mathematics/optimization/duality-lp/jacket.jpg
   alt:  Primal 문제와 Dual 문제의 형태
 
 # 홈에 pin으로 걸어놓을지 결정한다.

@@ -16,7 +16,7 @@ tags: [Optimization]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/optimization/primal-dual-ipm/jacket.jpg
+  path: /assets/img/posts/mathematics/optimization/primal-dual-ipm/jacket.jpg
   alt:  primal과 dual 양쪽에서 동시에 수렴하는 모습
 
 # 홈에 pin으로 걸어놓을지 결정한다.

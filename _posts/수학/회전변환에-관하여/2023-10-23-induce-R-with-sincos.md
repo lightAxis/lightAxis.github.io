@@ -16,7 +16,7 @@ tags: [수학, 회전 행렬]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/2-삼각함수로-회전-변환-유도/jacket.png
+  path: /assets/img/posts/mathematics/rotation/2-삼각함수로-회전-변환-유도/jacket.png
   alt: 그림 1
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -43,10 +43,10 @@ published: true
 
 ## 삼각함수를 사용하여 유도
 
-![그림1](/assets/img/posts/mathmatics/rotation/2-삼각함수로-회전-변환-유도/p-pprimg-rotation.png){: width="400" height="500"}
+![그림1](/assets/img/posts/mathematics/rotation/2-삼각함수로-회전-변환-유도/p-pprimg-rotation.png){: width="400" height="500"}
 _그림1_
 
-![그림2](/assets/img/posts/mathmatics/rotation/2-삼각함수로-회전-변환-유도/p-with-length-coordinate.png){: width="400" height="500"}
+![그림2](/assets/img/posts/mathematics/rotation/2-삼각함수로-회전-변환-유도/p-with-length-coordinate.png){: width="400" height="500"}
 _그림2_
 
 위의 그림1에서 회전되지 않은 벡터 $P$와 각도 $\theta$만큼 회전된 벡터 $P'$이 있을 때, 각각의 좌표는 다음과 같다 (그림2)

@@ -15,7 +15,7 @@ tags: [수학, 회전 행렬, 각속도]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/6.5-3차원-회전행렬과-각속도/jacket.png
+  path: /assets/img/posts/mathematics/rotation/6.5-3차원-회전행렬과-각속도/jacket.png
   alt: 회전 행렬과 각속도의 관계는?
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -153,7 +153,7 @@ $$\begin{align}
 
 ## 회전 변환의 미분과 각속도 벡터
 
-![그림1](/assets/img/posts/mathmatics/rotation/6.5-3차원-회전행렬과-각속도/jacket.png){: width="500" height="400"}
+![그림1](/assets/img/posts/mathematics/rotation/6.5-3차원-회전행렬과-각속도/jacket.png){: width="500" height="400"}
 _그림 1 : 벡터 u로 회전된 좌표계 B와 각속도 벡터_
 
 그림1 에서 회전하는 좌표계 $B$와 $B$에 붙어서 움직이는 점 $P$를 생각해보자.  

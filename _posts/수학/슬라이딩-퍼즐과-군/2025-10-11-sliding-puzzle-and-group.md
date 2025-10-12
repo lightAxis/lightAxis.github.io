@@ -16,7 +16,7 @@ tags: [수학, 퍼즐, 군론]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/jacket.png
+  path: /assets/img/posts/mathematics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/jacket.png
   alt: 슬라이딩 퍼즐
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -49,7 +49,7 @@ published: true
 
 이 퍼즐을 맞추는 방법은 널리 알려져 있고, 각각의 조각의 원래 위치가 어디인지 안다면 더더욱 쉽게 풀 수 있다. 
 
-![4x4슬라이딩퍼즐이미지](/assets/img/posts/mathmatics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/jacket.png){: width="400" height="300"}
+![4x4슬라이딩퍼즐이미지](/assets/img/posts/mathematics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/jacket.png){: width="400" height="300"}
 _그림 1 : 제일 유명한 4x4 슬라이딩 퍼즐_
 
 아무 생각 없이 사이트 하나에 들어가 4x4 슬라이딩 퍼즐을 맞추다가, 문득 한가지 궁금증이 생겼다.  
@@ -60,14 +60,14 @@ _그림 1 : 제일 유명한 4x4 슬라이딩 퍼즐_
 
 나는 곧바로 [온라인 4x4 슬라이딩 퍼즐](https://jweilhammer.github.io/sliding-puzzle-solver/) 사이트에서 불가능한 경우가 있는지 시도해 보았다. 
 
-![슬라이딩 퍼즐 사이트](/assets/img/posts/mathmatics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/sliding_puzzle_site.png){: width="400" height="300"}
+![슬라이딩 퍼즐 사이트](/assets/img/posts/mathematics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/sliding_puzzle_site.png){: width="400" height="300"}
 _그림 2 : 슬라이딩 퍼즐 사이트, 4x4_
 
 
 그런데 생각 외로 굉장히 단순한 반례가 있었다.  
 14<->15번 조각만 바꿨을 뿐인데, 갑자기 사이트에서 풀 수 없는 퍼즐이라는 경고가 뜬 것이다.  
 
-![슬라이딩 퍼즐 사이트 해결 불가능성 경고](/assets/img/posts/mathmatics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/sliding_puzzle_warning.png){: width="400" height="300"}
+![슬라이딩 퍼즐 사이트 해결 불가능성 경고](/assets/img/posts/mathematics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/sliding_puzzle_warning.png){: width="400" height="300"}
 _그림 3 : 14<->15 교환만 했는데도 풀 수 없는 퍼즐이라니_
 
 어이없게도 첫번째 시도 만에 바로 반례를 찾은것도 황당했는데, 더 황당한 건 이것을 solvable(해결 가능)로 만드는 방법이었다.  
@@ -113,7 +113,7 @@ _그림 3 : 14<->15 교환만 했는데도 풀 수 없는 퍼즐이라니_
 
 예를 들어, 정삼각형은 0도, 120도, 240도 회전과 좌우 대칭을 포함한 6가지의 대칭을 유지하는 변환들을 가진다. 
 
-![삼각형의대칭](/assets/img/posts/mathmatics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/triangle_symm.gif){: width="600" height="300"}
+![삼각형의대칭](/assets/img/posts/mathematics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/triangle_symm.gif){: width="600" height="300"}
 _그림 4 : 정삼각형의 대칭성_
 
 재미있는 건, 이 변환들이 서로 합성(Composition)될 수 있다는 점이다.  
@@ -146,7 +146,7 @@ $$
 
 그리고 이렇게 합성된 새로운 행동 역시 어쨌든 빈칸을 이리저리 움직였다가 다시 16번이 빈칸으로 돌아오는 행동이므로, 여전히 집합 G에 속한다.  
 
-![슬라이딩 퍼즐의 합성](/assets/img/posts/mathmatics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/composition_of_sliding.png){: width="600" height="300"}
+![슬라이딩 퍼즐의 합성](/assets/img/posts/mathematics/sliding/1-슬라이딩-퍼즐은-항상-풀릴까/composition_of_sliding.png){: width="600" height="300"}
 _그림 5 : 슬라이딩 퍼즐의 합성. (a)가 $g_1$, (b)가 $g_2$, (c)가 $g_2 \circ g_1$을 의미한다._
 
 이를 수식으로 나타내면 다음과 같다 : 

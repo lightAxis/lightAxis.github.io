@@ -16,7 +16,7 @@ tags: [Optimization]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/optimization/gradient-descent/jacket.png
+  path: /assets/img/posts/mathematics/optimization/gradient-descent/jacket.png
   alt: 경사 하강법의 경사 하강 궤적
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -67,12 +67,12 @@ published: true
 
 일반적인 비선형 최적화의 경우 다음처럼 근처의 local minimum으로 수렴한다.
 
-![nonlinear optimization](/assets/img/posts/mathmatics/optimization/gradient-descent/nonlinear-gradient-descent.JPG){: width="500" height="400"}
+![nonlinear optimization](/assets/img/posts/mathematics/optimization/gradient-descent/nonlinear-gradient-descent.JPG){: width="500" height="400"}
 _nonlinear 목적함수의 경사 하강법. local minimum으로 수렴한다.[출처](https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/grad-descent.pdf)_
 
 하지만 convex function의 경우, 단 하나의 local minimum이자 global minimum 밖에 없기 때문에 반드시 global minimum으로 수렴한다.
 
-![convex](/assets/img/posts/mathmatics/optimization/gradient-descent/gradient-descent.JPG){: width="500" height="400"}
+![convex](/assets/img/posts/mathematics/optimization/gradient-descent/gradient-descent.JPG){: width="500" height="400"}
 _convex 목적함수의 경사 하강법. global minimum으로 수렴한다.[출처](https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/grad-descent.pdf)_
 
 
@@ -132,7 +132,7 @@ step size는 경사하강법에서 정말 중요한 요소이다. 너무 작은 
 
 다음은 함수 $f(x) = (10x_1^2 + x^2_2)/2$에 대해 fixed step size를 적용한 예시이다.
 
-![nonlinear optimization](/assets/img/posts/mathmatics/optimization/gradient-descent/fixed-steps.jpg){: width="800" height="400"}
+![nonlinear optimization](/assets/img/posts/mathematics/optimization/gradient-descent/fixed-steps.jpg){: width="800" height="400"}
 _step size에 따른 수렴 경로 차이. [출처](https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/grad-descent.pdf)_
 
 - (a)는 step size가 너무 커서, 지나치게 큰 이동 거리를 만들어 내며 아예 발산해 버린다.
@@ -196,7 +196,7 @@ Backtracking line search는 adaptive step size의 한 방법이다. 매 iteratio
 
 앞서 exact line search에서 사용했던, $f(x_i + t\nabla f (x_i))$는 $t$에 대한 일변수 함수이다. $f$가 convex function 이라면, $t$에 따른 목적 함수의 함수값의 그래프는 다음과 같다 : 
 
-![backtracking line search](/assets/img/posts/mathmatics/optimization/gradient-descent/backtracking-linesearch.jpg){: width="800" height="400"} _step size 에 따른 목적함수의 값 그래프. [출처](https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/grad-descent.pdf)_
+![backtracking line search](/assets/img/posts/mathematics/optimization/gradient-descent/backtracking-linesearch.jpg){: width="800" height="400"} _step size 에 따른 목적함수의 값 그래프. [출처](https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/grad-descent.pdf)_
 
 우리의 경우, $\Delta x = -\nabla f$이다.
 

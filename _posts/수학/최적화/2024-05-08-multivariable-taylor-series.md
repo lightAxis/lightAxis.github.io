@@ -16,7 +16,7 @@ tags: [Optimization]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/optimization/multivariable-taylor-expansion/jacket.png
+  path: /assets/img/posts/mathematics/optimization/multivariable-taylor-expansion/jacket.png
   alt: 테일러 급수의 다변수 함수로의 확장
 
 # 홈에 pin으로 걸어놓을지 결정한다.

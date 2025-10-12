@@ -16,7 +16,7 @@ tags: [수학, 회전 변환, 좌표계 회전]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/3-회전변환과-자세-좌표계의-변환/jacket.png
+  path: /assets/img/posts/mathematics/rotation/3-회전변환과-자세-좌표계의-변환/jacket.png
   alt: 2차원 평면의 자세는 벡터의 회전과 어떤 관계인가
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -55,7 +55,7 @@ published: true
 
 ## 벡터의 회전 변환과 강체의 자세 표현
 
-![그림1](/assets/img/posts/mathmatics/rotation/3-회전변환과-자세-좌표계의-변환/rigid_body_2d_rotation.png){: width="500" height="400"}
+![그림1](/assets/img/posts/mathematics/rotation/3-회전변환과-자세-좌표계의-변환/rigid_body_2d_rotation.png){: width="500" height="400"}
 _그림 1 : $\theta$만큼 회전된 강체를 생각해보자_
 
 그림 1에서와 같이 2차원 상의 막대를 생각해보자. 이때, 막대와 같이 붙어서 움직이는 Body Frame($B$)을 생각해 볼 수 있다. 막대가 자세가 변함에 따라, 기준이 되는 Reference Frame(Inertial Frame, $I$)의 축 벡터와의 각도 역시 변할 것이다.
@@ -77,7 +77,7 @@ R(\theta) \hat{i_y} = \hat{b_y}
 
 ## 좌표계의 회전 변환
 
-![그림2](/assets/img/posts/mathmatics/rotation/3-회전변환과-자세-좌표계의-변환/2d-rotation-frame-conversion.png){: width="500" height="400"}
+![그림2](/assets/img/posts/mathematics/rotation/3-회전변환과-자세-좌표계의-변환/2d-rotation-frame-conversion.png){: width="500" height="400"}
 _그림 2 : 고정된 점을 표현하는 서로 다른 2개의 좌표계._
 
 다음 그림 2를 보자.
@@ -115,7 +115,7 @@ P_B = l \begin{bmatrix} \cos{\alpha} \\ \sin{\alpha} \end{bmatrix}
 
 이전 포스트에서 다뤘던 벡터의 회전을 생각해보자
 
-![그림3](/assets/img/posts/mathmatics/rotation/3-회전변환과-자세-좌표계의-변환/p-pprimg-rotation.png){: width="500" height="400"}
+![그림3](/assets/img/posts/mathematics/rotation/3-회전변환과-자세-좌표계의-변환/p-pprimg-rotation.png){: width="500" height="400"}
 _그림 3 : $\theta$만큼 $P -> P'$로 회전시킨다._
 
 평면상의 벡터를 회전시킬 때는, $R(\theta)$를 곱해서 점 $P->P'$로 회전시킨다. 어떻게 보면 정방향 처럼 생각할 수도 있겠다.  

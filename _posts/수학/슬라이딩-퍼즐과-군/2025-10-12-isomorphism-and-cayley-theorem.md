@@ -16,7 +16,7 @@ tags: [수학, 퍼즐, 군론]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/sliding/5-군동형-케일리정리/jacket.png
+  path: /assets/img/posts/mathematics/sliding/5-군동형-케일리정리/jacket.png
   alt: 대칭군의 위엄
 # 홈에 pin으로 걸어놓을지 결정한다.
 pin: false
@@ -102,7 +102,7 @@ $$\begin{align}
 \end{align}$$
 
 이 함수는 전단사 함수이며, 모든 $g_1, g_2 \in C_4$에 대해 $\phi(g_1 \cdot g_2) = \phi(g_1) \ast \phi(g_2)$를 만족한다.
-따라서, $C_4$는 자기 자신과 동형이며, $\phi$는 군 동형 사상이다.
+따라서, $C_4$는 $C_{4,C}$와 동형이며, $\phi$는 군 동형 사상이다.
 
 ### 군 동형의 성질
 

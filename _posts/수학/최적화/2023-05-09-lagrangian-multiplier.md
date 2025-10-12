@@ -16,7 +16,7 @@ tags: [Optimization]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/optimization/lagrangian-multiplier/jacket.png
+  path: /assets/img/posts/mathematics/optimization/lagrangian-multiplier/jacket.png
   alt: 라그랑주 승수의 기하학적 표현
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -233,7 +233,7 @@ $$\begin{align}
 ## 라그랑주 승수법의 기하학적 의미
 
 위의 예시 문제에서 라그랑주 승수법을 그림으로 표현해보자
-![2var_saddle](/assets/img/posts/mathmatics/optimization/lagrangian-multiplier/lagrangian_multiplier_2d.png){: width="500" height="400"} _목적함수와 제약조건과의 접점 & 그라디언트 벡터_
+![2var_saddle](/assets/img/posts/mathematics/optimization/lagrangian-multiplier/lagrangian_multiplier_2d.png){: width="500" height="400"} _목적함수와 제약조건과의 접점 & 그라디언트 벡터_
 
 목적 함수의 값을 $r^2$이라 하면, $f(x,y) = x^2 + y^2 = r^2$이 되어, 원점을 중심으로 반지름 $r$을 가진 원이 된다. 
 

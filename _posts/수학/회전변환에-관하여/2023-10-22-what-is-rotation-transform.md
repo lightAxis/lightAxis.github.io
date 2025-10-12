@@ -16,7 +16,7 @@ tags: [수학, 회전 변환, 벡터 회전, 프레임 회전]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/1-what-is-rotation/jacket.jpg
+  path: /assets/img/posts/mathematics/rotation/1-what-is-rotation/jacket.jpg
   alt: 그냥 각도 쓰면 되는데 왜..
 
 # 홈에 pin으로 걸어놓을지 결정한다.

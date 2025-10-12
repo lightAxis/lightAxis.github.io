@@ -16,7 +16,7 @@ tags: [수학, 회전 변환, 쿼터니언]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/10-복소수의-확장-쿼터니언/jacket.png
+  path: /assets/img/posts/mathematics/rotation/10-복소수의-확장-쿼터니언/jacket.png
   alt: 복소수의 확장, 4차원수 쿼터니언
 
 # 홈에 pin으로 걸어놓을지 결정한다.

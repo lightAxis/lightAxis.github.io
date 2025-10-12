@@ -16,7 +16,7 @@ tags: [수학, 회전 변환, 벡터 회전, 복소수]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/6-복소수의-exponential과-극형식/jacket.png
+  path: /assets/img/posts/mathematics/rotation/6-복소수의-exponential과-극형식/jacket.png
   alt: 복소수의 Exponential은..
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -125,7 +125,7 @@ e^{bi} &= 1 + \frac{bi}{1!} +\frac{(bi)^2}{2!} + \frac{(bi)^3}{3!} + \frac{(bi)^
 오일러 항등식을 자세히 살펴보면, 재미있는 점이 보인다.  
 $e^{\theta i}$를 복소평면에 표시해보면 다음과 같다.
 
-![그림1](/assets/img/posts/mathmatics/rotation/6-복소수의-exponential과-극형식/complex_plane_exponential_form.png){: width="500" height="400"}
+![그림1](/assets/img/posts/mathematics/rotation/6-복소수의-exponential과-극형식/complex_plane_exponential_form.png){: width="500" height="400"}
 _그림 1 : 복소평면 상에서 복소수의 Exponential_
 
 이를 통해 다음의 성질을 확인할 수 있다.

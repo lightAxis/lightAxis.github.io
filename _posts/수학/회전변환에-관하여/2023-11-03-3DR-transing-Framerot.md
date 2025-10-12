@@ -15,7 +15,7 @@ tags: [수학, 회전 변환, 벡터 회전, 프레임 회전]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/7.5-회전-변환-행렬의-프레임-회전-변환/jacket.png
+  path: /assets/img/posts/mathematics/rotation/7.5-회전-변환-행렬의-프레임-회전-변환/jacket.png
   alt: 회전 변환의 회전 변환의 회전 변환의 회전 변환의 ..
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -48,7 +48,7 @@ published: true
 
 [이전 포스트]({% post_url /수학/회전변환에-관하여/2023-10-25-mathmatical-traits-of-R %}#{{ "임의의-벡터와-축의-회전-변환"|url_encode}})에서, 회전변환행렬 $R$을 사용해서 점 P가 어떻게 회전되는지 보였다.
 
-![그림1](/assets/img/posts/mathmatics/rotation/7.5-회전-변환-행렬의-프레임-회전-변환/jacket.png){: width="500" height="400"}
+![그림1](/assets/img/posts/mathematics/rotation/7.5-회전-변환-행렬의-프레임-회전-변환/jacket.png){: width="500" height="400"}
 _그림 1: 고정된 점 P를 표현하는 2개의 프레임 좌표_
 
 그림1을 보자. 공간상에 고정된 점 $P$를 표현하는 2개의 좌표계, $I,B$가 있다. 각각의 좌표계로 점 P의 위치를 표현하는 벡터를 각각 $P_I, P_B$라 하자.  
@@ -82,7 +82,7 @@ R^T P_I &= R^T\left( \alpha \vec{i_x} + \beta\vec{i_x} \right) \nonumber \\[5pt]
 
 ## 벡터 회전 행렬의 프레임 회전 변환
 
-![그림2](/assets/img/posts/mathmatics/rotation/7.5-회전-변환-행렬의-프레임-회전-변환/2d-rotation-frame-conversion_conversion.png){: width="500" height="400"}
+![그림2](/assets/img/posts/mathematics/rotation/7.5-회전-변환-행렬의-프레임-회전-변환/2d-rotation-frame-conversion_conversion.png){: width="500" height="400"}
 _그림 2: 프레임 I,A,B,C와, 회전된 벡터 i,a,b,c들_
 
 그림2를 보자.  

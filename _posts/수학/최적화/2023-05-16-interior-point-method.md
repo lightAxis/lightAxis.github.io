@@ -16,7 +16,7 @@ tags: [Optimization]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/optimization/interior-point-method/jacket.jpg
+  path: /assets/img/posts/mathematics/optimization/interior-point-method/jacket.jpg
   alt:  점차 장벽을 세워가며 내부에서 최적해를 찾는 IPM의 모습
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -163,7 +163,7 @@ B(x) = - \log(-h_i(x))
 거기다가 앞에 계수를 곱하면, 장벽의 기울기도 조절할 수 있다.  
 $-(1/t)\log(-h(x))$에서 $t=0.5, 1, 2$일 때를 각각 그리면 다음과 같다 :  
 
-![Barrier Function](/assets/img/posts/mathmatics/optimization/interior-point-method/barrier-function.jpg){: width="600" height="400"} _log barrier function의 그래프와 Indicator Function_
+![Barrier Function](/assets/img/posts/mathematics/optimization/interior-point-method/barrier-function.jpg){: width="600" height="400"} _log barrier function의 그래프와 Indicator Function_
 
 $t$가 커질수록 장벽이 날카로워짐을 볼 수 있다. 
 
@@ -215,7 +215,7 @@ Interion point method가 각각의 $t$에 대해 centering step을 수행하면�
 
 예시로 LP 문제에 대한 centering step을 그려보면 다음과 같다 
 
-![Central Path](/assets/img/posts/mathmatics/optimization/interior-point-method/centering-step.jpg){: width="600" height="400"} _선형 문제의 Central Path의 모습_
+![Central Path](/assets/img/posts/mathematics/optimization/interior-point-method/centering-step.jpg){: width="600" height="400"} _선형 문제의 Central Path의 모습_
 
 ## Interpretation & Properties
 

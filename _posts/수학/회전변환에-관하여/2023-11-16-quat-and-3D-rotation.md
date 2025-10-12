@@ -16,7 +16,7 @@ tags: [수학, 회전 변환, 쿼터니언]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/10-복소수의-확장-쿼터니언/jacket.png
+  path: /assets/img/posts/mathematics/rotation/10-복소수의-확장-쿼터니언/jacket.png
   alt: 복소수의 확장, 4차원수 쿼터니언
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -260,10 +260,10 @@ $\vec{u_\bot}, \vec{u_\parallel}$ 등의 벡터를 3차원 회전변환 어딘�
 로드리게스 회전은 원점을 지나는 임의의 축 $\vec{u}$에 대해서 $\theta$만큼 벡터$\vec{v}$를 회전시키는 공식이다.  
 이 공식은 이전 포스트들 중, [로드리게스 회전(Rodrigues rotation)]({% post_url /수학/회전변환에-관하여/2023-11-04-Rodrigues-rotation %})에서 유도했다. 잘 기억이 나지 않는다면, 다시 읽어보길 권장한다.
 
-![그림1](/assets/img/posts/mathmatics/rotation/11-쿼터니언과-3차원-회전/3d_axis_rotation_vector_disintegrate.png){: width="500" height="400"}
+![그림1](/assets/img/posts/mathematics/rotation/11-쿼터니언과-3차원-회전/3d_axis_rotation_vector_disintegrate.png){: width="500" height="400"}
 _그림 1: 회전축에 대해 평행과 수직 성분으로 분해된 벡터_
 
-![그림2](/assets/img/posts/mathmatics/rotation/11-쿼터니언과-3차원-회전/3d_axis_rotation_vector_plane.png){: width="500" height="400"}
+![그림2](/assets/img/posts/mathematics/rotation/11-쿼터니언과-3차원-회전/3d_axis_rotation_vector_plane.png){: width="500" height="400"}
 _그림 2: 수직 성분을 $\theta$만큼 회전시키기_
 
 그림1,2를 보자. 임의의 축 $\vec{u}$에 대해서 벡터 $\vec{v}$의 성분을 $\vec{v_\parallel} + \vec{v_\bot}$으로 분해할 수 있다.  

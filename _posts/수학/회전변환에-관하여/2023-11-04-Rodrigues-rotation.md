@@ -16,7 +16,7 @@ tags: [수학, 회전 변환, 벡터 회전, 프레임 회전]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/8-로드리게스-회전/jacket.png
+  path: /assets/img/posts/mathematics/rotation/8-로드리게스-회전/jacket.png
   alt: 3차원의 회전은 무엇이 달라질까
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -57,7 +57,7 @@ published: true
 > \end{align}$$
 {: .prompt-info}
 
-![그림1](/assets/img/posts/mathmatics/rotation/8-로드리게스-회전/3d_axis_rotation_vector.png){: width="500" height="400"}
+![그림1](/assets/img/posts/mathematics/rotation/8-로드리게스-회전/3d_axis_rotation_vector.png){: width="500" height="400"}
 _그림 1: 임의의 축 $u$에 대해 회전된 벡터 $\vec{v}$_
 
 ## 로드리게스 회전 공식의 유도
@@ -73,7 +73,7 @@ $$ \begin{align}
 
 이제 주어진 값들로 $\vec{v_\parallel}, \vec{v_\bot}, \vec{v_\bot'}$을 유도하겠다.
 
-![그림2](/assets/img/posts/mathmatics/rotation/8-로드리게스-회전/3d_axis_rotation_vector_disintegrate.png){: width="500" height="400"}
+![그림2](/assets/img/posts/mathematics/rotation/8-로드리게스-회전/3d_axis_rotation_vector_disintegrate.png){: width="500" height="400"}
 _그림 2: 회전된 벡터를 여러개의 벡터 성분으로 분해해 본다_
 
 그림2를 통해 $\vec{p_\parallel}$을 유도할 수 있다.
@@ -97,7 +97,7 @@ $$\begin{align}
 &= \vec{v} - (\vec{u} \cdot \vec{v}) \vec{u} \label{ev2}
 \end{align}$$
 
-![그림3](/assets/img/posts/mathmatics/rotation/8-로드리게스-회전/3d_axis_rotation_vector_plane.png){: width="500" height="400"}
+![그림3](/assets/img/posts/mathematics/rotation/8-로드리게스-회전/3d_axis_rotation_vector_plane.png){: width="500" height="400"}
 _그림 3: 회전된 벡터가 놓여있는 평면의 좌표계 벡터들_
 
 그림3을 통해 $\vec{v_\bot'}$을 유도할 수 있다.  

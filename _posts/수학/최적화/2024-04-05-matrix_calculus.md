@@ -16,7 +16,7 @@ tags: [Optimization]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/optimization/matrix-calculus/jacket.png
+  path: /assets/img/posts/mathematics/optimization/matrix-calculus/jacket.png
   alt: 벡터를 벡터로 편미분하는 모습
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -229,18 +229,18 @@ $$\begin{align}
 
 ## 행렬 미분 종류 & Layout 총정리
 
-![그림1](/assets/img/posts/mathmatics/optimization/matrix-calculus/layouts.png)
+![그림1](/assets/img/posts/mathematics/optimization/matrix-calculus/layouts.png)
 _참고 : [Matrix calculus : Layout conventions](https://en.wikipedia.org/wiki/Matrix_calculus#Layout_conventions)_
 
 ## 미분의 성질
 
 ### 벡터/벡터
-![벡터/벡터 미분의 성질](/assets/img/posts/mathmatics/optimization/matrix-calculus/vector_vector_identities.png)
+![벡터/벡터 미분의 성질](/assets/img/posts/mathematics/optimization/matrix-calculus/vector_vector_identities.png)
 _참고 : [Matrix calculus : Vector-by-bector identities](https://en.wikipedia.org/wiki/Matrix_calculus#Vector-by-vector_identities)_
 
 ### 스칼라/벡터 
-![스칼라/벡터 미분의 성질1](/assets/img/posts/mathmatics/optimization/matrix-calculus/scalar_vector_identities_1.png)
-![스칼라/벡터 미분의 성질2](/assets/img/posts/mathmatics/optimization/matrix-calculus/scalar_vector_identities_2.png)
+![스칼라/벡터 미분의 성질1](/assets/img/posts/mathematics/optimization/matrix-calculus/scalar_vector_identities_1.png)
+![스칼라/벡터 미분의 성질2](/assets/img/posts/mathematics/optimization/matrix-calculus/scalar_vector_identities_2.png)
 _참고 : [Matrix calculus : Scalar-by-vector identities](https://en.wikipedia.org/wiki/Matrix_calculus#Scalar-by-vector_identities)_
 
 양이 많아 보이지만, 요약하면 주요 법칙들은 몇개 안된다. 

@@ -16,7 +16,7 @@ tags: [수학, 회전 변환, 벡터 회전, 복소수]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/rotation/5-각도-표현의-미분-불가능-문제와-복소수/jacket.jpg
+  path: /assets/img/posts/mathematics/rotation/5-각도-표현의-미분-불가능-문제와-복소수/jacket.jpg
   alt: 그냥 각도를 쓰면 어떤 문제가 있을까
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -159,7 +159,7 @@ R(10°) &= \begin{bmatrix}0.98481 & -0.17365  \\ 0.17365 & 0.98481\end{bmatrix} 
 $a \times -1 = -a$, $-a \times -1 = a$로 계속 순환된다.  
 곱셈의 이런 특징을 사용해서 자세를 자연스럽게 순환 시킬 수 있을까?
 
-![그림1](/assets/img/posts/mathmatics/rotation/5-각도-표현의-미분-불가능-문제와-복소수/1d_real_number.png){: width="500" height="400"}
+![그림1](/assets/img/posts/mathematics/rotation/5-각도-표현의-미분-불가능-문제와-복소수/1d_real_number.png){: width="500" height="400"}
 _그림 1 : 음수의 곱으로 순환하는 실수_
 
 그림 1에서 임의의 숫자 $a$를 수직선상에 표현하였다. 이때, -1을 곱함으로써 원점에 대해서 계속 대칭으로 이동하게 된다.
@@ -167,7 +167,7 @@ _그림 1 : 음수의 곱으로 순환하는 실수_
 하지만 만약 이게 각도의 덧셈과 같다면 어떨까?  
 -1을 곱한다는 것 자체의 의미가 만약 원점에 대해서 대칭으로 점을 옮기는 것이 아니라, 수를 180° 회전시키는 것이라면?
 
-![그림2](/assets/img/posts/mathmatics/rotation/5-각도-표현의-미분-불가능-문제와-복소수/1.5d_complex_number.png){: width="500" height="400"}
+![그림2](/assets/img/posts/mathematics/rotation/5-각도-표현의-미분-불가능-문제와-복소수/1.5d_complex_number.png){: width="500" height="400"}
 _그림 2 : 90° 각도의 수는 무엇일까_
 
 그림 2에서 -1을 두번 곱하는 것의 의미를 새롭게 생각해 볼 수 있다.  
@@ -189,7 +189,7 @@ _그림 2 : 90° 각도의 수는 무엇일까_
 
 따라서 그림2는 다음과 같이 실수축과 허수축으로 표현된 2차원 평면으로 바뀐다.  
 
-![그림3](/assets/img/posts/mathmatics/rotation/5-각도-표현의-미분-불가능-문제와-복소수/2d_complex_number.png){: width="500" height="400"}
+![그림3](/assets/img/posts/mathematics/rotation/5-각도-표현의-미분-불가능-문제와-복소수/2d_complex_number.png){: width="500" height="400"}
 _그림 3 : 실수축과 허수축으로 이루어진 2차원 평면_
 
 이를 `복소평면` 이라 하며, 이 평면상에 표시되는 수를 `복소수(Complex Number)`라 한다.

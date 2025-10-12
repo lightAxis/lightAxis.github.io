@@ -16,7 +16,7 @@ tags: [Optimization]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathmatics/optimization/newton-method/jacket.jpg
+  path: /assets/img/posts/mathematics/optimization/newton-method/jacket.jpg
   alt: 경사 하강법과 뉴턴 메소드의 차이
 
 # 홈에 pin으로 걸어놓을지 결정한다.
@@ -95,7 +95,7 @@ $$\begin{align}
 예시로, $f(x_1, x_2) = (10x^2_1 + x^2_2)/2 + 5 \log{(1+e^{-x_1-x_2})}$ 에 대해서, 경사하강법과 뉴턴법을 비교해보자.  
 Newton method의 매 step 만큼 gradient descent 의 step을 진행한다고 했을 때, 다음과 같이 수렴한다
 
-![gradient-vs-newton](/assets/img/posts/mathmatics/optimization/newton-method/gd-vs-nt.jpg){: width="600" height="400"} _검정이 Gradient descent, 파랑이 Newton's method로 접근한 것이다. [출처](https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/newton.pdf)_
+![gradient-vs-newton](/assets/img/posts/mathematics/optimization/newton-method/gd-vs-nt.jpg){: width="600" height="400"} _검정이 Gradient descent, 파랑이 Newton's method로 접근한 것이다. [출처](https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/newton.pdf)_
 
 확실히 gradient descent 방법이 더 많은 iteration을 돌아야 수렴함을 알 수 있다. 
 
@@ -120,7 +120,7 @@ x_{k+1} &= x_{k} - \frac{f(x_k)}{f'(x_k)}
 
 \end{align}$$
 
-![newton-1d](/assets/img/posts/mathmatics/optimization/newton-method/newtonmethod-func.JPG){: width="600" height="400"} _Newton's method in 1D. [출처](https://en.wikipedia.org/wiki/Newton%27s_method)_
+![newton-1d](/assets/img/posts/mathematics/optimization/newton-method/newtonmethod-func.JPG){: width="600" height="400"} _Newton's method in 1D. [출처](https://en.wikipedia.org/wiki/Newton%27s_method)_
 
 이 root-finding이라는 부분은, 우리가 앞서 optimization에서 자주 사용했던 $\nabla f=0$을 구하는 부분과 비슷하다. 
 
