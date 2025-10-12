@@ -16,8 +16,8 @@ tags: [수학, 퍼즐, 군론]
 
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
-  path: /assets/img/posts/mathematics/sliding/5-군동형-케일리정리/jacket.png
-  alt: 대칭군의 위엄
+  path: /assets/img/posts/mathematics/sliding/6-순열의-부호/jacket.png
+  alt: 순열의 부호 함수
 # 홈에 pin으로 걸어놓을지 결정한다.
 pin: false
 
@@ -34,11 +34,11 @@ math: true
 mermaid: false
 
 # 이 포스트를 보여줄지 말지
-published: true
+published: false
 
 ---
 
 > 순열의 부호란 무엇이며, 어떤 성질이 있을까?
 
-> 참고 1 : [https://en.wikipedia.org/wiki/Cayley%27s_theorem](https://en.wikipedia.org/wiki/Cayley%27s_theorem)  
+> 참고 1 : [https://en.wikipedia.org/wiki/Parity_of_a_permutation](https://en.wikipedia.org/wiki/Parity_of_a_permutation)  
 > 참고 2 : [https://dec41.user.srcf.net/notes/IA_M/groups.pdf](https://dec41.user.srcf.net/notes/IA_M/groups.pdf)  
