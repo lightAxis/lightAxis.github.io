@@ -306,7 +306,7 @@ I(\sigma_{i+1}, a', b') &= \text{sgn}(\sigma_{i+1}) \cdot (-1)^{a' + b'} \\
 > $I_0 := I(e, a_0, b_0), \quad (a_0, b_0) \text{는 초기 빈칸의 좌표} $
 > $I_i := I(\sigma_i, a_i, b_i), \quad (a_i, b_i) \text{는 i번째 움직임 후의 빈칸의 좌표} $
 >
-> $I_0 \neq I_i \text{ for any } i \geq 1 \implies \text{state } ( \sigma, a_i, b_i ) \text{ is not solvable by sliding puzzle}$
+> $I_0 \neq I_i \text{ for any } i \geq 1 \implies ( \sigma, a_i, b_i ) \text{ is not solvable by sliding puzzle}$
 {: .prompt-info}
 
 
@@ -326,7 +326,7 @@ $I_0 \neq I_i$ (단, $i \geq 1$)이면, 슬라이딩 퍼즐이 해결 불가능�
 하지만 $I_0 = I_i$이면 항상 풀 수 있는지(충분조건)은 아직 증명하지 않았다.  
 즉, 아래 명제에 대한 증명이 아직 남아 있다 : 
 
-$$I_0 = I_i, \quad i \geq 1 \implies \{state \} ( \sigma_i, a_i, b_i ) \text{ is solvable by sliding puzzle}$$
+$$I_0 = I_i, \quad i \geq 1 \implies ( \sigma_i, a_i, b_i ) \text{ is solvable by sliding puzzle}$$
 
 한 방향 $p \implies q$가 참이라고 해서, $q \implies p$도 성립하는 건 아니니까.
 
