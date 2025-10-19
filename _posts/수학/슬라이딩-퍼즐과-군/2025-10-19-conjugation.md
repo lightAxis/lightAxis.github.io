@@ -78,7 +78,7 @@ published: true
 $(a\ b) (b \ c) = (a\ b\ c)$
 
 2. 공통 원소가 없는 교환들 :  
-$(a\ b) (c\ d) = (a\ c\ b)(b\ d\ a)$
+$(a\ b) (c\ d) = (a\ c\ b)(a\ c\ d)$
 
 이제 끝났다.  
 
@@ -116,7 +116,7 @@ $$sgn(\sigma \tau) = sgn(\sigma) \cdot sgn(\tau)$$
 따라서 3-cycle만을 합성하여 만드는 모든 순열, $\sigma = \rho_1 \rho_2 ... \rho_m$에 대해서 : 
 
 $$sgn(\sigma) = sgn(\rho_1) \cdot sgn(\rho_2) \cdot ... \cdot sgn(\rho_m) = +1$$
-$$\therefore sgn(\sigma) \in A_n$$
+$$\therefore \sigma \in A_n$$
 
 결국 **홀순열은 3-cycle들의 곱만으로는 절대 나타낼 수 없다.**   
 
