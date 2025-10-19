@@ -16,7 +16,7 @@ tags: [수학, 퍼즐, 군론]
 # 미리보기 이미지 세팅. 필요없으면 비워도 됨
 image:
   path: /assets/img/posts/mathematics/sliding/8-conjugation/jacket.png
-  alt: 3-cycle 분해
+  alt: 다양한 군의 켤례류
 # 홈에 pin으로 걸어놓을지 결정한다.
 pin: false
 
