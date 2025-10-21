@@ -227,7 +227,7 @@ published: true
 > $$\begin{align}
 > \text{for } u, v \in B, &\quad u \sim v \\
 > \text{Let } &\tau_{uv}\in S_{nm} \text{ be the transposition swapping } \phi(u),\phi(v).\\
-> \tau_u^v &: \chi_u \to \chi_v,\qquad \tau_u^v(\sigma, u) := (\tau_{uv}\cdot \sigma,\; v) \\
+> \tau_u^v &: \chi_u \to \chi_v,\qquad \tau_u^v(\sigma, u) := (\tau_u^v\cdot \sigma,\; v) \\
 > \end{align}$$
 {: .prompt-info}
 
