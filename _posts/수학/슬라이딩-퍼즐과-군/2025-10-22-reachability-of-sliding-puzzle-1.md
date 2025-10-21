@@ -65,7 +65,7 @@ published: true
 >
 > $$\begin{align}
 > \text{for } a \in \mathbb{N}, [a] &:= \{n \in \mathbb{N} \mid 1 \leq n \leq a\} \\
-> \text{for } m, n \in \mathbb{N}, \text{Index Set } B_{n, m} &:= [m] \times [n] \\
+> \text{for } m, n \in \mathbb{N}, \text{Index Set } B_{n, m} &:= [n] \times [m] \\
 > &= \{(a,b) \mid a \in [n], b \in [m]\} \\
 > \end{align}$$
 {: .prompt-info}
@@ -84,7 +84,7 @@ published: true
 > &:= (a,b) \mapsto m(a-1) + b \\
 > \nonumber \\
 >\phi \text{ is bijective} \quad \phi^{-1} &: [nm] \to B \\
-> &:= k \mapsto \left(\left\lceil \frac{k}{m} \right\rceil, k - (k \mod m)\right) \\
+> &:= k \mapsto \left(\left\lceil \frac{k}{m} \right\rceil, \; ((k-1) \bmod m) + 1 \right) \\
 > \end{align}$$
 {: .prompt-info}
 
@@ -118,7 +118,7 @@ published: true
 {: .prompt-info}
 
 더 자세한 정의는 다음을 참고하자 :  
-[군의 작용 (위키백과)](https://en.wikipedia.org/wiki/Group_action#Definition)  
+[Group Action(Wiki)](https://en.wikipedia.org/wiki/Group_action#Definition)  
 
 먼저 $S_{nm}$이 1D 인덱스 집합 $[nm]$에 작용하는 것은 자명하다.  
 다음으로 2D 좌표 집합 $B$에 작용하는 것은, 평탄화 함수 $\phi$가 bijective이므로 여전히 군의 작용의 조건을 만족한다. 
@@ -226,12 +226,12 @@ published: true
 > 
 > $$\begin{align}
 > \text{for } u, v \in B, &\quad u \sim v \\
-> \tau_u^{v} &: \chi_{u} \subset \chi \to \chi_{v} \subset \chi \\
-> &:= (\pi(u), \pi(v)) \in S_{nm}, \text{ transposition} \\
+> \text{Let } &\tau_{uv}\in S_{nm} \text{ be the transposition swapping } \phi(u),\phi(v).\\
+> \tau_u^v &: \chi_u \to \chi_v,\qquad \tau_u^v(\sigma, u) := (\tau_{uv}\cdot \sigma,\; v) \\
 > \end{align}$$
 {: .prompt-info}
 
-일반적인 transposition과 크게 다를 게 없어 보이나, 기존 $\chi$에 대한 작용의 정의역과 공역을 각각 $\chi_u, \chi_v$로 제한하였다는게 중요하다.  
+일반적인 transposition과 크게 다를 바 없어 보이나, 기존 $\chi$에 대한 작용의 정의역과 공역을 각각 $\chi_u, \chi_v$로 제한하였다는게 중요하다.  
 
 즉, 빈칸이 $u$에서 $v$로 이동하는 원자적 움직임은, 빈칸의 위치를 $u$에서 $v$로 바꾸고,
 빈칸과 $v$에 있던 조각을 맞바꾸는 transposition $\tau$를 슬라이딩 보드 상태 순열에 곱하는 것이다.
@@ -263,10 +263,12 @@ published: true
 >
 > $$\begin{align}
 > \text{for } u, v \in B, \\
-> \Pi(P_u^{v}) &: Dom(u) \subset \chi \to Dom(v) \subset \chi \\
-> &:= \tau_{u_k}^{v} \cdot \tau_{u_{k-1}}^{u_k} \ldots \cdot \tau_{u_1}^{u_2} \cdot \tau_u^{u_1}\\
+> \Pi(P_u^{v}) &:= \tau_{u_k}^{v} \cdot \tau_{u_{k-1}}^{u_k} \ldots \cdot \tau_{u_1}^{u_2} \cdot \tau_u^{u_1} \\
+> &: \chi_{u} \subset \chi \to \chi_{v} \subset \chi \\
+> &\text{acting on limited domain, codomain of } \chi, \\
 > \nonumber \\
-> \text{where } \Pi(P_u^{v}) \in S_{nm} &\text{ is the composition of the transpositions in } P_u^{v} \\
+> \text{where }& \Pi(P_u^{v}) \in S_{nm} \\
+> \text{ is the }&\text{composition of the transpositions in } P_u^{v} \\
 > \end{align}$$
 {: .prompt-info}
 
@@ -290,8 +292,8 @@ published: true
 >
 > $$\begin{align}
 > \text{for } p_0 \in B, &\text{ initial position of the empty space} \\
-> \text{for } X_1=(\rho_1, p_1), X_2=(\rho_2, p_2) \in &\chi_{0, p_0}, \quad I(X_1) = I(X_2) \\
-> \Rightarrow \exists \Pi(X_{p_1}^{p_2}) &\in S_{nm}, s.t. \Pi(X_{p_1}^{p_2})(X_1) = X_2 \\
+> \text{for } X_1=(\rho_1, p_1), &X_2=(\rho_2, p_2) \in \chi_{0, p_0}, \quad I(X_1) = I(X_2) \\
+> \Rightarrow &\exists P_{p_1}^{p_2} \in \mathbb{P}_{p_1}^{p_2}\ \text{s.t.}\ \Pi(P_{p_1}^{p_2})(X_1) = X_2. \\
 > \end{align}$$
 {: .prompt-info}
 
@@ -300,3 +302,10 @@ published: true
 
 ## 마치며
 
+정의만 잔뜩 늘어놓으니 읽는 사람 입장에선 되게 재미없고 지루했을 것이다. 
+하지만 나는 마음속에서 직관적으로 이해하고 있던 개념들을 수학적으로 엄밀하게 정의해 보는 작업을 통해 여러가지 수학 표기법과 정의를 쌓아올리는 연습을 할 수 있었다.  
+결과적으로 나한테만 좋은 포스트다. 
+
+어쨌거나 이제 슬라이딩 퍼즐의 도달 가능성 문제에 대한 모든 정의가 끝났다. 
+다음 포스트에서 드디어 도달 가능성 문제를 증명할 것이다.  
+정의가 기억나지 않는다면, 다시 이 포스트로 돌아와서 확인하면 된다.
