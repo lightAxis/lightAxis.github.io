@@ -159,7 +159,7 @@ S_3 = \{ e, (1 \ 2), (1 \ 3), (2 \ 3), (1 \ 2 \ 3), (1 \ 3 \ 2) \}
 > 어떤 집합 $X$에 대해, $X$에서 $X$로 가는 전단사 함수(bijective function)들의 집합을 대칭군이라고 한다.  
 > 이 군을 $Sym(X)$로 표기한다 : 
 > 
-> $Sym(X) = \{ \sigma : X \to X \mid \sigma \text{ is bijective function} \}$
+> $Sym(X) = \\{ \sigma : X \to X \mid \sigma \text{ is bijective function} \\} $
 > 
 {: .prompt-info}
 
