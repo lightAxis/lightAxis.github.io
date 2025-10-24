@@ -33,7 +33,7 @@ math: true
 mermaid: false
 
 # 이 포스트를 보여줄지 말지
-published: true
+published: false
 
 ---
 
